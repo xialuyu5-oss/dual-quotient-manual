@@ -6,7 +6,28 @@
 
 > **制作方式：本项目由 Cursor Vibe Coding 作成，使用模型 Fable5.1。**
 
-[开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
+[界面预览](#界面预览) · [开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
+
+## 界面预览
+
+以下为本地实际运行的界面截图，日课中的完成状态为演示数据。
+
+### 首页
+
+![双商训练手册首页：从聪明到智慧，从术器到道法](docs/screenshots/home.jpg)
+
+<details>
+<summary>查看自测与日课界面</summary>
+
+### 自测
+
+![二十四题自测：按实际做法的频率选择答案](docs/screenshots/assessment.jpg)
+
+### 日课
+
+![日课打卡：每日练习、连续完成天数与近十四天记录](docs/screenshots/practice.jpg)
+
+</details>
 
 ## 这是什么
 
