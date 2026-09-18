@@ -1,5 +1,5 @@
 /** Stable URL identifiers, independent of translated display names. */
-export const LOCALES = ["zh-CN", "zh-TW", "en", "ja", "de", "ru", "fr"] as const;
+export const LOCALES = ["zh-CN", "zh-TW", "en", "ja", "ko", "de", "ru", "es", "fr"] as const;
 export type Locale = (typeof LOCALES)[number];
 export const DEFAULT_LOCALE: Locale = "zh-CN";
 
@@ -8,10 +8,24 @@ export const LANGUAGE_NAMES: Record<Locale, string> = {
   "zh-TW": "繁體中文",
   en: "English",
   ja: "日本語",
+  ko: "한국어",
   de: "Deutsch",
   ru: "Русский",
+  es: "Español",
   fr: "Français",
 };
+
+/** Native names remain recognizable; Chinese readers also see familiar labels. */
+export function languageLabel(target: Locale, interfaceLocale: Locale): string {
+  const names = interfaceLocale === "zh-CN"
+    ? { en: "英语", ja: "日语", ko: "韩国语", de: "德语", ru: "俄语", es: "西班牙语", fr: "法语" }
+    : interfaceLocale === "zh-TW"
+      ? { en: "英語", ja: "日語", ko: "韓國語", de: "德語", ru: "俄語", es: "西班牙語", fr: "法語" }
+      : null;
+  return names && target in names
+    ? `${names[target as keyof typeof names]} · ${LANGUAGE_NAMES[target]}`
+    : LANGUAGE_NAMES[target];
+}
 
 export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value);

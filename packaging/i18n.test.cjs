@@ -56,7 +56,7 @@ test("dates and decimals follow the chosen language", async () => {
   assert.equal(formatDate("en", "invalid"), "—");
 });
 
-test("all seven interface dictionaries have complete messages and matching placeholders", () => {
+test("all supported interface dictionaries have complete messages and matching placeholders", () => {
   const folder = path.join(root, "src/lib/i18n/dictionaries");
   const source = JSON.parse(fs.readFileSync(path.join(folder, "zh-CN.json"), "utf8"));
   const placeholders = value => [...value.matchAll(/\{([a-zA-Z][a-zA-Z0-9_]*)\}/g)].map(m => m[1]).sort();
@@ -69,6 +69,18 @@ test("all seven interface dictionaries have complete messages and matching place
       assert.deepEqual(placeholders(value), placeholders(source[key]), `${locale}: placeholders in ${key}`);
     }
   }
+});
+
+test("the full requested language set is available and recognizable in Chinese", () => {
+  const { LOCALES, languageLabel, localizedPath } = localeHelpers;
+  assert.deepEqual([...LOCALES].sort(), ["zh-CN", "zh-TW", "en", "ja", "ko", "de", "ru", "es", "fr"].sort());
+  assert.equal(languageLabel("ko", "zh-CN"), "韩国语 · 한국어");
+  assert.equal(languageLabel("es", "zh-CN"), "西班牙语 · Español");
+  assert.equal(languageLabel("de", "zh-CN"), "德语 · Deutsch");
+  assert.equal(languageLabel("ru", "zh-CN"), "俄语 · Русский");
+  assert.equal(languageLabel("ru", "zh-TW"), "俄語 · Русский");
+  assert.equal(languageLabel("ko", "en"), "한국어");
+  assert.equal(localizedPath("es", "/ko/manual/preface?from=nav#practice"), "/es/manual/preface?from=nav#practice");
 });
 
 test("every language contains all 18 complete chapter structures with stable identities", () => {

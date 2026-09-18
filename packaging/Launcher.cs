@@ -10,8 +10,8 @@ using System.Threading;
 using System.Windows.Forms;
 
 [assembly: AssemblyTitle("双商训练手册")]
-[assembly: AssemblyVersion("0.2.0.0")]
-[assembly: AssemblyFileVersion("0.2.0.0")]
+[assembly: AssemblyVersion("0.3.0.0")]
+[assembly: AssemblyFileVersion("0.3.0.0")]
 
 internal static class Launcher
 {
@@ -28,7 +28,7 @@ internal static class Launcher
         string name = CultureInfo.CurrentUICulture.Name;
         if (name.StartsWith("zh", StringComparison.OrdinalIgnoreCase))
             return name.IndexOf("TW", StringComparison.OrdinalIgnoreCase) >= 0 || name.IndexOf("HK", StringComparison.OrdinalIgnoreCase) >= 0 || name.IndexOf("Hant", StringComparison.OrdinalIgnoreCase) >= 0 ? "zh-TW" : "zh-CN";
-        foreach (string code in new string[] { "ja", "de", "ru", "fr" })
+        foreach (string code in new string[] { "ja", "ko", "de", "ru", "es", "fr" })
             if (name.StartsWith(code, StringComparison.OrdinalIgnoreCase)) return code;
         return "en";
     }
@@ -40,8 +40,10 @@ internal static class Launcher
             case "zh-CN": words = new string[] { "双商训练手册", "免安装版", "已启动，手册会在浏览器中打开。\n使用期间请保留此窗口，关闭窗口即可退出。", "打开手册", "退出", "自测与打卡记录保存在当前浏览器", "文件不完整。请完整解压 ZIP；不要只复制 EXE。", "本地服务未能启动。", "启动超时，请完整解压后重试。", "本地服务已停止，请重新启动手册。", "本地端口 43119 已被占用。请关闭已运行的手册启动窗口，或检查占用端口的程序。", "请在浏览器中打开：" }; break;
             case "zh-TW": words = new string[] { "雙商訓練手冊", "免安裝版", "已啟動，手冊會在瀏覽器中開啟。\n使用期間請保留此視窗，關閉視窗即可結束。", "開啟手冊", "結束", "自測與打卡記錄保存在目前瀏覽器", "檔案不完整。請完整解壓縮 ZIP；不要只複製 EXE。", "本機服務無法啟動。", "啟動逾時，請完整解壓縮後重試。", "本機服務已停止，請重新啟動手冊。", "本機連接埠 43119 已被占用。請關閉已開啟的手冊視窗，或檢查占用程式。", "請在瀏覽器中開啟：" }; break;
             case "ja": words = new string[] { "思考と感情のトレーニング手帳", "ポータブル版", "起動しました。ブラウザーで手帳が開きます。\n使用中はこのウィンドウを開いたままにしてください。閉じると終了します。", "手帳を開く", "終了", "自己点検と実践の記録は現在のブラウザーに保存されます", "ファイルが不足しています。ZIP 全体を展開してください。EXE だけをコピーしないでください。", "ローカルサービスを起動できませんでした。", "起動がタイムアウトしました。完全に展開してから再試行してください。", "ローカルサービスが停止しました。再起動してください。", "ポート 43119 が使用中です。起動済みの手帳を閉じるか、使用中のプログラムを確認してください。", "ブラウザーで開いてください：" }; break;
+            case "ko": words = new string[] { "사고와 감정 훈련 안내서", "포터블 버전", "시작되었습니다. 브라우저에서 안내서가 열립니다.\n사용 중에는 이 창을 열어 두세요. 닫으면 종료됩니다.", "안내서 열기", "종료", "자기 점검과 실천 기록은 현재 브라우저에 저장됩니다", "파일이 부족합니다. EXE만 복사하지 말고 ZIP 전체를 압축 해제하세요.", "로컬 서비스를 시작하지 못했습니다.", "시작 시간이 초과되었습니다. 전체 압축을 해제한 뒤 다시 시도하세요.", "로컬 서비스가 중지되었습니다. 다시 시작하세요.", "포트 43119가 사용 중입니다. 이미 실행 중인 안내서를 닫거나 해당 포트를 사용하는 프로그램을 확인하세요.", "브라우저에서 열어 주세요: " }; break;
             case "de": words = new string[] { "Handbuch für Denken und Gefühle", "Portable Ausgabe", "Gestartet. Das Handbuch öffnet sich im Browser.\nLassen Sie dieses Fenster geöffnet. Schließen beendet die Anwendung.", "Handbuch öffnen", "Beenden", "Selbsteinschätzung und Übungen bleiben in diesem Browser", "Dateien fehlen. Entpacken Sie das ganze ZIP, nicht nur die EXE.", "Der lokale Dienst konnte nicht starten.", "Zeitüberschreitung. Vollständig entpacken und erneut versuchen.", "Der lokale Dienst wurde beendet. Bitte neu starten.", "Port 43119 ist belegt. Schließen Sie ein bereits gestartetes Handbuch oder prüfen Sie das Programm am Port.", "Im Browser öffnen:" }; break;
             case "ru": words = new string[] { "Руководство по мышлению и эмоциям", "Портативная версия", "Запущено. Руководство откроется в браузере.\nОставьте это окно открытым. Закрытие завершает работу.", "Открыть", "Выйти", "Самооценки и отметки сохраняются в текущем браузере", "Не хватает файлов. Распакуйте весь ZIP, а не только EXE.", "Не удалось запустить локальную службу.", "Время запуска истекло. Полностью распакуйте архив и повторите.", "Локальная служба остановлена. Запустите снова.", "Порт 43119 занят. Закройте уже запущенное руководство или проверьте использующую порт программу.", "Откройте в браузере:" }; break;
+            case "es": words = new string[] { "Manual de pensamiento y emociones", "Versión portable", "Iniciado. El manual se abrirá en el navegador.\nMantén esta ventana abierta. Cerrar detiene la aplicación.", "Abrir manual", "Salir", "Las autoevaluaciones y prácticas se guardan en este navegador", "Faltan archivos. Extrae todo el ZIP, no solo el EXE.", "No se pudo iniciar el servicio local.", "Se agotó el tiempo de inicio. Extrae todo el archivo e inténtalo de nuevo.", "El servicio local se detuvo. Reinicia el manual.", "El puerto 43119 está ocupado. Cierra otro manual abierto o revisa el programa que usa el puerto.", "Abrir en el navegador:" }; break;
             case "fr": words = new string[] { "Manuel de la pensée et des émotions", "Version portable", "Démarré. Le manuel s’ouvre dans le navigateur.\nGardez cette fenêtre ouverte. La fermer arrête l’application.", "Ouvrir le manuel", "Quitter", "Autoévaluations et exercices restent dans ce navigateur", "Fichiers manquants. Extrayez tout le ZIP, pas seulement l’EXE.", "Le service local n’a pas pu démarrer.", "Délai dépassé. Extrayez complètement l’archive et réessayez.", "Le service local s’est arrêté. Veuillez redémarrer.", "Le port 43119 est occupé. Fermez le manuel déjà lancé ou vérifiez le programme utilisant ce port.", "Ouvrez dans le navigateur :" }; break;
             default: words = new string[] { "Thinking and Emotional Growth Manual", "Portable edition", "Started. The manual opens in your browser.\nKeep this window open while using it. Close it to stop the application.", "Open manual", "Exit", "Assessment and practice records stay in this browser", "Files are missing. Extract the entire ZIP, not just the EXE.", "The local service could not start.", "Startup timed out. Extract the full archive and try again.", "The local service stopped. Please restart the manual.", "Port 43119 is in use. Close an existing manual window or check the program using this port.", "Open in your browser:" }; break;
         }

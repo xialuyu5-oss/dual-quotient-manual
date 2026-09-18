@@ -3,7 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { LanguagesIcon } from "lucide-react";
 import { useI18n } from "@/components/i18n-provider";
-import { isLocale, LANGUAGE_NAMES, LOCALES, localizedPath } from "@/lib/i18n/locales";
+import { isLocale, languageLabel, LOCALES, localizedPath } from "@/lib/i18n/locales";
 
 export function LanguageSwitcher() {
   const { locale, t } = useI18n();
@@ -15,7 +15,7 @@ export function LanguageSwitcher() {
       <span className="sr-only">{t("语言")}</span>
       <select
         value={locale}
-        className="max-w-36 rounded-md border border-border bg-card px-2 py-1.5 text-foreground focus-visible:outline-2 focus-visible:outline-primary"
+        className="max-w-56 rounded-md border border-border bg-card px-2 py-1.5 text-foreground focus-visible:outline-2 focus-visible:outline-primary"
         onChange={(event) => {
           const next = event.target.value;
           if (!isLocale(next)) return;
@@ -24,7 +24,7 @@ export function LanguageSwitcher() {
           router.push(localizedPath(next, pathname) + window.location.search + window.location.hash);
         }}
       >
-        {LOCALES.map((code) => <option key={code} value={code}>{LANGUAGE_NAMES[code]}</option>)}
+        {LOCALES.map((code) => <option key={code} value={code}>{languageLabel(code, locale)}</option>)}
       </select>
     </label>
   );
