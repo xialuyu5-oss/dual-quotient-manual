@@ -1,0 +1,25 @@
+﻿双商训练手册 v0.1.1 · Windows x64 免安装版
+
+1. 将整个 ZIP 完整解压到一个文件夹。
+2. 双击“ 双商训练手册.exe ”，手册会在默认浏览器打开。
+3. 使用期间保留启动窗口；关闭窗口或点击“退出”即可停止服务。
+
+无需安装 Node.js、npm，也无需输入命令。阅读、自测和打卡可离线使用。
+请保留 app、runtime 等随附文件夹，不要单独移动 EXE。
+目标系统为 Windows 10/11 x64，启动器使用系统 .NET Framework 4.x。
+启动器尚未进行代码签名，Windows 可能提示未知发布者。
+
+自测与打卡记录保存在当前浏览器的本机存储中。
+换浏览器、清除网站数据或使用隐私模式，可能无法保留原记录。
+地址固定为 http://127.0.0.1:43119/，新版解压到其他目录仍可使用同一浏览器的记录。
+原开发版本地址不同，其记录不会自动迁移。
+关闭浏览器标签页不会停止服务；请关闭启动窗口。
+卸载只需退出后删除解压文件夹，浏览器中的记录不会随之删除。
+
+若端口 43119 被占用，启动器会提示失败，不会关闭其他软件。
+若浏览器未自动打开，可点击“打开手册”或手动访问上述地址。
+启动错误日志：%LOCALAPPDATA%\DualQuotientManual\launcher-error.log
+
+本项目由 Cursor Vibe Coding 作成，使用模型 Fable5.1。
+项目：https://github.com/xialuyu5-oss/dual-quotient-manual
+第三方许可见 THIRD-PARTY-NOTICES.txt、runtime/LICENSE-node.txt 和 licenses/。
