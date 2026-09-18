@@ -8,6 +8,18 @@
 
 [界面预览](#界面预览) · [开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
 
+## Windows 免安装版
+
+**[下载 v0.1.1 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.1.1)**
+
+下载 `windows-x64.zip` → 完整解压 → 双击 **双商训练手册.exe**，浏览器会自动打开。无需安装 Node.js，也无需输入命令。使用期间保留启动窗口，关闭窗口即可退出。
+
+- 面向 Windows 10/11 x64，使用系统 .NET Framework 4.x；请保留随包附带的 `app`、`runtime` 文件夹。
+- 阅读、自测和打卡可离线使用，免安装版使用本机字体。
+- 记录保存在当前浏览器，固定地址为 `http://127.0.0.1:43119/`。换浏览器、清除网站数据或使用隐私模式可能丢失记录；旧开发地址的记录不会自动迁移。
+- 启动器未进行代码签名，Windows 可能显示未知发布者提示。
+- 开发者可在 Windows x64、安装 Node.js 并执行 `npm ci` 后，运行 `npm run package:windows` 生成压缩包；产物位于 `dist/`。打包使用系统 .NET Framework C# 编译器，并获取对应 Node.js 版本的官方许可证。
+
 ## 界面预览
 
 以下为本地实际运行的界面截图，日课中的完成状态为演示数据。
