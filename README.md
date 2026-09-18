@@ -6,7 +6,7 @@
 
 > **制作方式：本项目由 Cursor Vibe Coding 作成，使用模型 Fable5.1。**
 
-[界面预览](#界面预览) · [开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
+[在线网页版](https://xialuyu5-oss.github.io/dual-quotient-manual/) · [界面预览](#界面预览) · [开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
 
 ## Windows 免安装版
 
