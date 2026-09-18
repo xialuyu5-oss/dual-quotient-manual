@@ -1,3 +1,6 @@
+"use client";
+
+import { useI18n } from "@/components/i18n-provider";
 import { LEVELS, type Level } from "@/lib/taxonomy";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +34,7 @@ export function LevelBadge({
   className?: string;
   withShort?: boolean;
 }) {
+  const { tx } = useI18n();
   const meta = LEVELS[level];
   return (
     <span
@@ -40,8 +44,8 @@ export function LevelBadge({
         className,
       )}
     >
-      <span className="text-sm leading-none">{meta.name}</span>
-      {withShort && <span className="font-sans font-normal">{meta.short}</span>}
+      <span className="text-sm leading-none">{tx(meta.name)}</span>
+      {withShort && <span className="font-sans font-normal">{tx(meta.short)}</span>}
     </span>
   );
 }

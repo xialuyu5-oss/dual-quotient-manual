@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
 import remarkGfm from "remark-gfm";
-import Link from "next/link";
+import { LocaleLink as Link } from "@/components/locale-link";
 import { cn } from "@/lib/utils";
 
 export function Markdown({
@@ -18,7 +18,7 @@ export function Markdown({
         components={{
           a: ({ href, children }) => {
             const url = href ?? "#";
-            if (url.startsWith("/")) {
+            if (url.startsWith("/") && !url.startsWith("//")) {
               return <Link href={url}>{children}</Link>;
             }
             return (

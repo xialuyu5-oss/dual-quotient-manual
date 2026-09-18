@@ -1,8 +1,10 @@
 "use client";
 
-import Link from "next/link";
+import { useI18n } from "@/components/i18n-provider";
+import { LocaleLink as Link } from "@/components/locale-link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { stripLocale } from "@/lib/i18n/locales";
 
 const LINKS = [
   { href: "/manual", label: "手册", match: (p: string) => p.startsWith("/manual") },
@@ -11,9 +13,10 @@ const LINKS = [
 ] as const;
 
 export function NavLinks() {
-  const pathname = usePathname();
+  const { t, tx } = useI18n();
+  const pathname = stripLocale(usePathname());
   return (
-    <nav aria-label="主导航" className="flex items-center gap-1 sm:gap-2">
+    <nav aria-label={t("主导航")} className="flex items-center gap-1 sm:gap-2">
       {LINKS.map((link) => {
         const active = link.match(pathname);
         return (
@@ -28,7 +31,7 @@ export function NavLinks() {
                 : "text-muted-foreground",
             )}
           >
-            {link.label}
+            {tx(link.label)}
           </Link>
         );
       })}

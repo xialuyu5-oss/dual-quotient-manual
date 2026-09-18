@@ -1,4 +1,7 @@
-import Link from "next/link";
+"use client";
+
+import { useI18n } from "@/components/i18n-provider";
+import { LocaleLink as Link } from "@/components/locale-link";
 import type { ChapterMeta } from "@/lib/content";
 import { PARTS, type Part } from "@/lib/taxonomy";
 import { LEVEL_DOT } from "@/components/level-badge";
@@ -13,8 +16,9 @@ export function TocList({
   currentSlug?: string;
   compact?: boolean;
 }) {
+  const { t, tx } = useI18n();
   return (
-    <nav aria-label="目录" className={cn("space-y-6", compact && "space-y-5")}>
+    <nav aria-label={t("目录")} className={cn("space-y-6", compact && "space-y-5")}>
       {groups.map(({ part, chapters }) => (
         <section key={part}>
           <h3
@@ -23,7 +27,7 @@ export function TocList({
               compact ? "mb-2 text-xs" : "mb-3 text-sm",
             )}
           >
-            {PARTS[part].title}
+            {tx(PARTS[part].title)}
           </h3>
           <ul className={cn("space-y-1", !compact && "space-y-1.5")}>
             {chapters.map((chapter) => {
@@ -42,10 +46,10 @@ export function TocList({
                     <span
                       className={cn(
                         "shrink-0 font-serif tabular-nums text-muted-foreground",
-                        compact ? "w-12 text-[11px]" : "w-14 text-xs",
+                        compact ? "max-w-20 text-[11px]" : "max-w-24 text-xs",
                       )}
                     >
-                      {chapter.label}
+                      {tx(chapter.label)}
                     </span>
                     <span className="flex min-w-0 flex-1 items-baseline gap-1.5">
                       {chapter.level && (
@@ -57,7 +61,7 @@ export function TocList({
                           )}
                         />
                       )}
-                      <span className="truncate">{chapter.title}</span>
+                      <span className="break-words">{tx(chapter.title)}</span>
                     </span>
                   </Link>
                 </li>
