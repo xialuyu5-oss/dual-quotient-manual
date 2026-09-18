@@ -1,5 +1,7 @@
 # 双商训练手册
 
+[简体中文](README.md) · [繁體中文](README.zh-TW.md) · [English](README.en.md) · [日本語](README.ja.md)
+
 **从聪明到智慧，从术器到道法。**
 
 把思考、情绪与人际关系放进同一张训练地图：通过 **18 篇手册、24 题自测、每日与每周打卡**，把读到的道理变成可以反复练习的行动。
@@ -12,12 +14,13 @@
 
 ## Windows 免安装版
 
-**[下载 v0.1.1 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.1.1)**
+**[下载 v0.2.0 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0)**
 
 下载 `windows-x64.zip` → 完整解压 → 双击 **双商训练手册.exe**，浏览器会自动打开。无需安装 Node.js，也无需输入命令。使用期间保留启动窗口，关闭窗口即可退出。
 
 - 面向 Windows 10/11 x64，使用系统 .NET Framework 4.x；请保留随包附带的 `app`、`runtime` 文件夹。
 - 阅读、自测和打卡可离线使用，免安装版使用本机字体。
+- 启动窗口跟随 Windows 界面语言；网页顶部可随时切换七种语言。
 - 记录保存在当前浏览器，固定地址为 `http://127.0.0.1:43119/`。换浏览器、清除网站数据或使用隐私模式可能丢失记录；旧开发地址的记录不会自动迁移。
 - 启动器未进行代码签名，Windows 可能显示未知发布者提示。
 - 开发者可在 Windows x64、安装 Node.js 并执行 `npm ci` 后，运行 `npm run package:windows` 生成压缩包；产物位于 `dist/`。打包使用系统 .NET Framework C# 编译器，并获取对应 Node.js 版本的官方许可证。
@@ -45,7 +48,23 @@
 
 ## 这是什么
 
-「双商训练手册」是一本中文成长手册，也是一个配套的阅读、自测与习惯打卡网站。它关注两个相互连接的问题：**如何看清事情，如何理解自己与他人。**
+「双商训练手册」是一本成长手册，也是一个配套的多语言阅读、自测与习惯打卡网站。它关注两个相互连接的问题：**如何看清事情，如何理解自己与他人。**
+
+## 七种语言，全文可读
+
+界面、18 篇正文、24 道题目、结果说明和日常练习均提供以下语言。使用页面顶部的语言选择器，切换后继续阅读同一章；同一浏览器、同一站点的已保存自测与打卡记录共用。
+
+| 语言 | 直接网页浏览 | GitHub 正文 |
+| --- | --- | --- |
+| 简体中文 | [打开](https://xialuyu5-oss.github.io/dual-quotient-manual/zh-CN/) | [阅读](content/) |
+| 繁體中文 | [開啟](https://xialuyu5-oss.github.io/dual-quotient-manual/zh-TW/) | [閱讀](content/zh-TW/) |
+| English | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/en/) | [Read](content/en/) |
+| 日本語 | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ja/) | [読む](content/ja/) |
+| Deutsch | [Öffnen](https://xialuyu5-oss.github.io/dual-quotient-manual/de/) | [Lesen](content/de/) |
+| Русский | [Открыть](https://xialuyu5-oss.github.io/dual-quotient-manual/ru/) | [Читать](content/ru/) |
+| Français | [Ouvrir](https://xialuyu5-oss.github.io/dual-quotient-manual/fr/) | [Lire](content/fr/) |
+
+原有中文网址继续可用。GitHub 介绍页提供简体中文、繁体中文、English、日本語四版。译文为本项目整理，欢迎提出具体的译文修正。
 
 手册用“道、法、术、器”组织两条训练路径。训练从具体工具与技法开始，逐步走向稳定的行为系统与判断力：
 
@@ -62,10 +81,10 @@
 
 ### 阅读：按章节，也按自己的薄弱环节
 
-- 18 篇 Markdown 文章，覆盖概念地图、两条训练路径、日常练习、常见陷阱与参考书单。
+- 每种语言 18 篇 Markdown 文章，覆盖概念地图、两条训练路径、日常练习、常见陷阱与参考书单。
 - 首页提供八格矩阵和“见器、习术、立法、悟道”四个阶段的说明。
 - 阅读页支持桌面侧栏目录、移动端抽屉目录、预计阅读时间和上一篇／下一篇导航。
-- 暖纸色背景、宋体正文与分层色标，适合中文长文阅读。
+- 暖纸色背景、衬线正文与分层色标，语言切换同步调整文字、日期和数字显示。
 - 无需启动网站，也可以直接在 GitHub 阅读 [`content/`](content/) 中的全文。
 
 ### 自测：从实际做法找到练习入口
@@ -121,6 +140,9 @@ npm run dev
 | `npm run build` | 生产构建，预生成手册章节页面 |
 | `npm run start` | 运行生产构建，端口 `43117`；需先执行 build |
 | `npm run lint` | 运行 ESLint |
+| `npm run test:i18n` | 检查七套文案、占位符、18 篇章节及稳定路径 |
+| `npm run test:portable` | 检查本机静态服务器 |
+| `npm run package:windows` | 构建并打包 Windows x64 免安装版 |
 
 生产运行：
 
@@ -129,7 +151,7 @@ npm run build
 npm run start
 ```
 
-当前配置使用 Next.js 的构建与服务器运行方式，尚未配置纯静态导出或 GitHub Pages 部署。将源码上传到 GitHub 后，仓库首页可以展示本 README；交互网站仍需单独运行或部署。
+已配置 GitHub Pages 自动部署：[部署工作流](.github/workflows/deploy-pages.yml) 在 `main` 更新后检查所有语言并生成静态网站。网页不需要数据库或运行中的 Node.js 服务器。设置 `GITHUB_PAGES=1` 后运行 `npm run build` 可生成带项目路径前缀的 `out/`；`DQ_PORTABLE=1` 则生成免安装版使用的 `.next-portable/`。这两种导出无需运行 `npm run start`。
 
 ## 数据保存与联网说明
 
@@ -154,16 +176,12 @@ npm run start
 ## 源码结构
 
 ```text
-content/                          18 篇手册正文
+content/                          简体中文原文及六个译文子目录，每种 18 篇
 src/
 ├── app/
-│   ├── page.tsx                  首页、八格矩阵与训练路径
-│   ├── manual/page.tsx           全书目录
-│   ├── manual/[slug]/page.tsx    章节阅读与静态生成
-│   ├── assessment/page.tsx       自测入口
-│   ├── practice/page.tsx         日课入口
-│   ├── layout.tsx               全站布局、标题与字体
-│   └── globals.css              纸墨配色与中文阅读排版
+│   ├── [[...route]]/             旧中文路径、七语言静态路由与页面元数据
+│   └── globals.css               纸墨配色与阅读排版
+├── views/                       首页、目录、章节、自测与日课页面
 ├── components/
 │   ├── assessment/              作答、结果与历史对比
 │   ├── practice/                日课、周课与完成统计
@@ -172,13 +190,14 @@ src/
 │   ├── use-local-storage.ts     本地存储状态与订阅
 │   └── use-now.ts               客户端时间
 └── lib/
+    ├── i18n/                    语言、路径、日期与七套界面词典
     ├── content.ts               章节读取、排序与相邻章节
     ├── taxonomy.ts              两条路径与四层地图的定义
     ├── assessment.ts            24 题、评分与推荐规则
     └── practice.ts              练习清单、日期与连续天数
 ```
 
-正文由服务器侧读取并渲染；自测计算、打卡交互与记录保存发生在浏览器中。
+正文在构建时读取并预渲染；自测计算、语言切换、打卡交互与记录保存发生在浏览器中。Windows 启动器与本机静态服务器位于 `packaging/`。
 
 ## 修改内容
 
@@ -200,6 +219,7 @@ summary: 一句话摘要
 - `part` 可选 `preface`、`map`、`iq`、`eq`、`integration`、`appendix`。
 - `iq`／`eq` 部分还需设置 `level`，可选 `qi`、`shu`、`fa`、`dao`；八格矩阵每格对应一个章节。
 - 内容加载器含进程内缓存。修改内容后若页面未刷新，可重启开发服务器；生产环境需重新构建。
+- 新增或修改章节时，同步更新六个语言子目录，保持 `slug`、`part`、`level`、`order` 一致。界面词典位于 `src/lib/i18n/dictionaries/`，命名占位符应保持一致。构建会先检查所有七种语言，缺失不会静默回退成中文。
 - 题目与评分规则在 [`src/lib/assessment.ts`](src/lib/assessment.ts)，练习清单在 [`src/lib/practice.ts`](src/lib/practice.ts)。修改已引用章节的 `slug` 时，应同步更新相关链接与推荐映射。
 
 ## 制作说明

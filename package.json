@@ -1,13 +1,14 @@
 {
   "name": "dual-quotient-manual",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 43117",
-    "build": "next build",
+    "build": "npm run test:i18n && next build",
     "start": "next start -p 43117",
     "lint": "eslint",
     "test:portable": "node --test packaging/server.test.cjs",
+    "test:i18n": "node --test packaging/i18n.test.cjs",
     "package:windows": "powershell -NoProfile -File packaging/build-windows.ps1"
   },
   "dependencies": {
