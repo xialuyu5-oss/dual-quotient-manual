@@ -52,7 +52,7 @@ function loadAll(locale: Locale = DEFAULT_LOCALE): Chapter[] {
       order: Number(data.order),
       summary: String(data.summary ?? ""),
       readingMinutes: Math.max(1, Math.round(
-        locale.startsWith("zh") || locale === "ja"
+        locale.startsWith("zh") || locale === "ja" || locale === "ko"
           ? plainLength / CHARS_PER_MINUTE
           : content.trim().split(/\s+/).length / 200,
       )),
