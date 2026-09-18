@@ -16,6 +16,8 @@ import { LevelBadge } from "@/components/level-badge";
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return getAllChapters().map((chapter) => ({ slug: chapter.slug }));
 }
