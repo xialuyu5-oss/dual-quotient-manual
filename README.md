@@ -8,6 +8,8 @@
 
 [在线网页版](https://xialuyu5-oss.github.io/dual-quotient-manual/) · [界面预览](#界面预览) · [开始阅读](content/00-preface.md) · [一页纸总纲](content/17-one-page.md) · [功能介绍](#功能介绍) · [本地运行](#本地运行) · [源码结构](#源码结构)
 
+> **可直接网页浏览：** [打开双商训练手册网页版](https://xialuyu5-oss.github.io/dual-quotient-manual/)，无需下载、安装或输入命令。
+
 ## Windows 免安装版
 
 **[下载 v0.1.1 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.1.1)**
