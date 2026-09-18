@@ -10,9 +10,9 @@ An interactive handbook connecting clear thinking, emotional awareness and relat
 
 > **Read and use it directly in your browser:** [Open the English web app](https://xialuyu5-oss.github.io/dual-quotient-manual/en/). No download, installation, account or API key required.
 
-[Read the preface](content/en/00-preface.md) · [One-page overview](content/en/17-one-page.md) · [Windows download](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0)
+[Read the preface](content/en/00-preface.md) · [One-page overview](content/en/17-one-page.md) · [Windows download](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0)
 
-## Seven complete app languages
+## Nine complete app languages
 
 The interface, all chapters, questions, result explanations and practice instructions are translated. Use the language selector to keep reading the same chapter in another language. Saved assessments and practice records are shared across languages within the same browser and site.
 
@@ -24,17 +24,19 @@ The interface, all chapters, questions, result explanations and practice instruc
 | 日本語 | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/ja/) | [Read](content/ja/) |
 | Deutsch | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/de/) | [Read](content/de/) |
 | Русский | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/ru/) | [Read](content/ru/) |
+| 한국어 | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/ko/) | [Read](content/ko/) |
+| Español | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/es/) | [Read](content/es/) |
 | Français | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/fr/) | [Read](content/fr/) |
 
 Existing Chinese URLs remain available. Repository introductions are provided in Simplified Chinese, Traditional Chinese, English and Japanese. Concrete translation corrections are welcome.
 
 ## Windows portable edition
 
-[Download v0.2.0 for Windows x64](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0), fully extract `windows-x64.zip`, then double-click **双商训练手册.exe**. The handbook opens in your browser. Keep the launcher window open while using it; closing it stops the local service.
+[Download v0.3.0 for Windows x64](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0), fully extract `windows-x64.zip`, then double-click **双商训练手册.exe**. The handbook opens in your browser. Keep the launcher window open while using it; closing it stops the local service.
 
 - No separate Node.js installation or commands. Reading, assessment and practice work offline with system fonts.
 - Windows 10/11 x64 with the system .NET Framework 4.x. Keep the bundled `app` and `runtime` folders alongside the launcher.
-- The launcher follows the Windows display language; the web interface offers all seven languages.
+- The launcher follows the Windows display language; the web interface offers all nine languages.
 - The local address remains `http://127.0.0.1:43119/`, preserving records from the previous portable version when using the same browser. Web, development and portable addresses have separate storage.
 - The launcher is unsigned. Windows may show an unknown-publisher notice.
 
@@ -131,18 +133,18 @@ The [Pages workflow](.github/workflows/deploy-pages.yml) checks and publishes th
 Next.js 16.3.5, React 19.2.8, TypeScript, Tailwind CSS v4, shadcn/ui, Base UI and Lucide. Markdown uses `gray-matter`, `react-markdown`, `remark-gfm` and `remark-breaks`. Exact versions are in [package-lock.json](package-lock.json).
 
 ```text
-content/                  Chinese originals and six translated folders
+content/                  Chinese originals and eight translated folders
 src/app/[[...route]]/     Legacy and locale routes, layout and metadata
 src/views/                Home, contents, chapter, assessment and practice
 src/components/           Shared UI and interactive features
-src/lib/i18n/             Seven dictionaries, locale paths and formatting
+src/lib/i18n/             Nine dictionaries, locale paths and formatting
 src/lib/content.ts        Chapter loading and reading order
 src/lib/assessment.ts     Questions, scoring and recommendations
 src/lib/practice.ts       Practice items, dates and streaks
 packaging/                Launcher, local server, tests and Windows build
 ```
 
-Chapters are prerendered during builds; interaction and storage happen in the browser. Edit Markdown frontmatter fields `label`, `title`, `subtitle` and `summary` for each language, keeping `slug`, `part`, `level` and `order` identical. All seven languages must contain the same chapters. Update every dictionary when adding a UI message and preserve named placeholders.
+Chapters are prerendered during builds; interaction and storage happen in the browser. Edit Markdown frontmatter fields `label`, `title`, `subtitle` and `summary` for each language, keeping `slug`, `part`, `level` and `order` identical. All nine languages must contain the same chapters. Update every dictionary when adding a UI message and preserve named placeholders.
 
 The content loader caches files in-process: restart development if edits do not appear, and rebuild production output. Changes to chapter slugs must also update assessment/practice links. Builds reject missing translations instead of silently substituting Chinese.
 

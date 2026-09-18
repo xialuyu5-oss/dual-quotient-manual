@@ -14,13 +14,13 @@
 
 ## Windows 免安装版
 
-**[下载 v0.2.0 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0)**
+**[下载 v0.3.0 Windows 免安装包](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0)**
 
 下载 `windows-x64.zip` → 完整解压 → 双击 **双商训练手册.exe**，浏览器会自动打开。无需安装 Node.js，也无需输入命令。使用期间保留启动窗口，关闭窗口即可退出。
 
 - 面向 Windows 10/11 x64，使用系统 .NET Framework 4.x；请保留随包附带的 `app`、`runtime` 文件夹。
 - 阅读、自测和打卡可离线使用，免安装版使用本机字体。
-- 启动窗口跟随 Windows 界面语言；网页顶部可随时切换七种语言。
+- 启动窗口跟随 Windows 界面语言；网页顶部可随时切换九种语言。
 - 记录保存在当前浏览器，固定地址为 `http://127.0.0.1:43119/`。换浏览器、清除网站数据或使用隐私模式可能丢失记录；旧开发地址的记录不会自动迁移。
 - 启动器未进行代码签名，Windows 可能显示未知发布者提示。
 - 开发者可在 Windows x64、安装 Node.js 并执行 `npm ci` 后，运行 `npm run package:windows` 生成压缩包；产物位于 `dist/`。打包使用系统 .NET Framework C# 编译器，并获取对应 Node.js 版本的官方许可证。
@@ -50,7 +50,7 @@
 
 「双商训练手册」是一本成长手册，也是一个配套的多语言阅读、自测与习惯打卡网站。它关注两个相互连接的问题：**如何看清事情，如何理解自己与他人。**
 
-## 七种语言，全文可读
+## 九种语言，全文可读
 
 界面、18 篇正文、24 道题目、结果说明和日常练习均提供以下语言。使用页面顶部的语言选择器，切换后继续阅读同一章；同一浏览器、同一站点的已保存自测与打卡记录共用。
 
@@ -60,8 +60,10 @@
 | 繁體中文 | [開啟](https://xialuyu5-oss.github.io/dual-quotient-manual/zh-TW/) | [閱讀](content/zh-TW/) |
 | English | [Open](https://xialuyu5-oss.github.io/dual-quotient-manual/en/) | [Read](content/en/) |
 | 日本語 | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ja/) | [読む](content/ja/) |
-| Deutsch | [Öffnen](https://xialuyu5-oss.github.io/dual-quotient-manual/de/) | [Lesen](content/de/) |
-| Русский | [Открыть](https://xialuyu5-oss.github.io/dual-quotient-manual/ru/) | [Читать](content/ru/) |
+| 德语 · Deutsch | [Öffnen](https://xialuyu5-oss.github.io/dual-quotient-manual/de/) | [Lesen](content/de/) |
+| 俄语 · Русский | [Открыть](https://xialuyu5-oss.github.io/dual-quotient-manual/ru/) | [Читать](content/ru/) |
+| 韩国语 · 한국어 | [打开](https://xialuyu5-oss.github.io/dual-quotient-manual/ko/) | [阅读](content/ko/) |
+| 西班牙语 · Español | [Abrir](https://xialuyu5-oss.github.io/dual-quotient-manual/es/) | [Leer](content/es/) |
 | Français | [Ouvrir](https://xialuyu5-oss.github.io/dual-quotient-manual/fr/) | [Lire](content/fr/) |
 
 原有中文网址继续可用。GitHub 介绍页提供简体中文、繁体中文、English、日本語四版。译文为本项目整理，欢迎提出具体的译文修正。
@@ -140,7 +142,7 @@ npm run dev
 | `npm run build` | 生产构建，预生成手册章节页面 |
 | `npm run start` | 运行生产构建，端口 `43117`；需先执行 build |
 | `npm run lint` | 运行 ESLint |
-| `npm run test:i18n` | 检查七套文案、占位符、18 篇章节及稳定路径 |
+| `npm run test:i18n` | 检查九套文案、占位符、18 篇章节及稳定路径 |
 | `npm run test:portable` | 检查本机静态服务器 |
 | `npm run package:windows` | 构建并打包 Windows x64 免安装版 |
 
@@ -176,10 +178,10 @@ npm run start
 ## 源码结构
 
 ```text
-content/                          简体中文原文及六个译文子目录，每种 18 篇
+content/                          简体中文原文及八个译文子目录，每种 18 篇
 src/
 ├── app/
-│   ├── [[...route]]/             旧中文路径、七语言静态路由与页面元数据
+│   ├── [[...route]]/             旧中文路径、九语言静态路由与页面元数据
 │   └── globals.css               纸墨配色与阅读排版
 ├── views/                       首页、目录、章节、自测与日课页面
 ├── components/
@@ -190,7 +192,7 @@ src/
 │   ├── use-local-storage.ts     本地存储状态与订阅
 │   └── use-now.ts               客户端时间
 └── lib/
-    ├── i18n/                    语言、路径、日期与七套界面词典
+    ├── i18n/                    语言、路径、日期与九套界面词典
     ├── content.ts               章节读取、排序与相邻章节
     ├── taxonomy.ts              两条路径与四层地图的定义
     ├── assessment.ts            24 题、评分与推荐规则
@@ -219,7 +221,7 @@ summary: 一句话摘要
 - `part` 可选 `preface`、`map`、`iq`、`eq`、`integration`、`appendix`。
 - `iq`／`eq` 部分还需设置 `level`，可选 `qi`、`shu`、`fa`、`dao`；八格矩阵每格对应一个章节。
 - 内容加载器含进程内缓存。修改内容后若页面未刷新，可重启开发服务器；生产环境需重新构建。
-- 新增或修改章节时，同步更新六个语言子目录，保持 `slug`、`part`、`level`、`order` 一致。界面词典位于 `src/lib/i18n/dictionaries/`，命名占位符应保持一致。构建会先检查所有七种语言，缺失不会静默回退成中文。
+- 新增或修改章节时，同步更新八个语言子目录，保持 `slug`、`part`、`level`、`order` 一致。界面词典位于 `src/lib/i18n/dictionaries/`，命名占位符应保持一致。构建会先检查所有九种语言，缺失不会静默回退成中文。
 - 题目与评分规则在 [`src/lib/assessment.ts`](src/lib/assessment.ts)，练习清单在 [`src/lib/practice.ts`](src/lib/practice.ts)。修改已引用章节的 `slug` 时，应同步更新相关链接与推荐映射。
 
 ## 制作说明

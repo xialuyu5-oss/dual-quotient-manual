@@ -10,9 +10,9 @@
 
 > **ブラウザーですぐに利用できます：** [日本語版を開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ja/)。ダウンロード、インストール、アカウント、API キーは不要です。
 
-[序文を読む](content/ja/00-preface.md) · [一枚で見る全体図](content/ja/17-one-page.md) · [Windows 版](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0)
+[序文を読む](content/ja/00-preface.md) · [一枚で見る全体図](content/ja/17-one-page.md) · [Windows 版](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0)
 
-## 7言語で全文を読む
+## 9言語で全文を読む
 
 画面、18篇の本文、質問、結果の説明、実践項目を翻訳しています。上部の言語選択から、同じ章の別言語版へ移れます。同一ブラウザー・同一サイトの保存済み結果と実践記録は、言語をまたいで共用します。
 
@@ -24,17 +24,19 @@
 | 日本語 | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ja/) | [読む](content/ja/) |
 | Deutsch | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/de/) | [読む](content/de/) |
 | Русский | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ru/) | [読む](content/ru/) |
+| 한국어 | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/ko/) | [読む](content/ko/) |
+| Español | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/es/) | [読む](content/es/) |
 | Français | [開く](https://xialuyu5-oss.github.io/dual-quotient-manual/fr/) | [読む](content/fr/) |
 
 従来の中国語 URL も引き続き利用できます。GitHub の紹介ページは簡体字中国語、繁体字中国語、英語、日本語の4版です。具体的な訳文の改善提案を歓迎します。
 
 ## Windows ポータブル版
 
-[v0.2.0 Windows x64 版をダウンロード](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.2.0)し、`windows-x64.zip` を**すべて展開**してから、**双商训练手册.exe** をダブルクリックします。既定のブラウザーで開きます。使用中は起動ウィンドウを残してください。閉じるとローカルサービスも終了します。
+[v0.3.0 Windows x64 版をダウンロード](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0)し、`windows-x64.zip` を**すべて展開**してから、**双商训练手册.exe** をダブルクリックします。既定のブラウザーで開きます。使用中は起動ウィンドウを残してください。閉じるとローカルサービスも終了します。
 
 - Node.js の別途インストールやコマンド入力は不要です。本文、セルフチェック、実践はオフラインで使えます。
 - Windows 10/11 x64、システムの .NET Framework 4.x を使用します。`app` と `runtime` フォルダーを一緒に保管してください。
-- 起動ウィンドウは Windows の表示言語に従い、Web 画面では7言語を選択できます。
+- 起動ウィンドウは Windows の表示言語に従い、Web 画面では9言語を選択できます。
 - アドレスは `http://127.0.0.1:43119/` のままです。同じブラウザーなら旧ポータブル版の記録を引き継げます。公開 Web 版や開発用アドレスの記録とは別です。
 - 起動プログラムは未署名のため、Windows に発行元不明の表示が出る場合があります。
 
@@ -131,18 +133,18 @@ npm run dev
 Next.js 16.3.5、React 19.2.8、TypeScript、Tailwind CSS v4、shadcn/ui、Base UI、Lucide を使用。Markdown は `gray-matter`、`react-markdown`、`remark-gfm`、`remark-breaks` で扱います。正確な依存関係は [package-lock.json](package-lock.json) にあります。
 
 ```text
-content/                  中国語原文と6言語の翻訳フォルダー
+content/                  中国語原文と8言語の翻訳フォルダー
 src/app/[[...route]]/     既存・多言語ルート、レイアウト、メタデータ
 src/views/                ホーム、目次、本文、自己点検、実践
 src/components/           共通 UI と操作機能
-src/lib/i18n/             7言語の辞書、パス、日付・数値表示
+src/lib/i18n/             9言語の辞書、パス、日付・数値表示
 src/lib/content.ts        章の読み込みと順序
 src/lib/assessment.ts     質問、採点、推奨ルール
 src/lib/practice.ts       実践項目、日付、連続日数
 packaging/                起動プログラム、サーバー、検査、梱包
 ```
 
-本文はビルド時に生成し、操作と保存はブラウザーで実行します。章を変更するときは7言語をそろえ、frontmatter の `label`、`title`、`subtitle`、`summary` を翻訳し、`slug`、`part`、`level`、`order` を共通に保ってください。画面の文言を追加したら辞書も更新し、名前付き変数を維持します。
+本文はビルド時に生成し、操作と保存はブラウザーで実行します。章を変更するときは9言語をそろえ、frontmatter の `label`、`title`、`subtitle`、`summary` を翻訳し、`slug`、`part`、`level`、`order` を共通に保ってください。画面の文言を追加したら辞書も更新し、名前付き変数を維持します。
 
 読み込みにはプロセス内キャッシュがあります。開発中に変更が見えなければ再起動し、本番は再ビルドします。slug を変える場合は質問・実践側のリンクも更新してください。翻訳不足はビルドで検出し、中国語へ黙って置き換えません。
 
