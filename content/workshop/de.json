@@ -1,0 +1,494 @@
+{
+  "title": "Praxiswerkstatt",
+  "intro": "Übertrage das Handbuch auf eine konkrete Situation: verstehe den Kontext, wähle eine Handlung, halte sie fest und überprüfe dein Urteil anhand des Ergebnisses.",
+  "ui": {
+    "eyebrow": "Handbuch der doppelten Intelligenz · Raum für Erweiterungen",
+    "growing": "Drei Module zum Einstieg; weitere Fälle, Werkzeuge und Themen folgen. Wähle jeweils ein Problem, das dich gerade betrifft.",
+    "sectionNav": "Module der Werkstatt",
+    "items": "Inhalte",
+    "casesTitle": "Fallbeispiele aus dem Alltag",
+    "casesIntro": "Wähle eine Reaktion und prüfe dann Nutzen, Kosten und Voraussetzungen.",
+    "workbookTitle": "Arbeitsbuch zum Ausfüllen",
+    "workbookIntro": "Halte Entscheidungen, Gefühle, Gespräche und Grenzen zum späteren Nachdenken fest.",
+    "topicsTitle": "Interessen, Anreize und Grenzen",
+    "topicsIntro": "Betrachte Bedürfnisse ebenso wie Ressourcen, Regeln, Entscheidungsbefugnisse und Kosten.",
+    "caseNote": "Die erfundenen Fälle beruhen auf häufigen Situationen. Bei unvollständigen Informationen können mehrere Antworten sinnvoll sein. Die Optionen zeigen Abwägungen; deine Persönlichkeit wird nicht bewertet.",
+    "filter": "Situationen filtern",
+    "allCases": "Alle Situationen",
+    "tradeoff": "Abwägung dieser Wahl",
+    "chooseFirst": "Wähle eine Reaktion: Was könnte sie lösen, was bleibt möglicherweise offen?",
+    "principle": "Das Problem verstehen",
+    "action": "Ein möglicher Schritt",
+    "review": "Später überprüfen",
+    "openWorkbook": "Passendes Arbeitsblatt öffnen",
+    "relatedChapter": "Zugehöriges Kapitel lesen",
+    "privacy": "Deine Eingaben bleiben in diesem Browser und werden nicht hochgeladen. Alle Sprachen teilen dieselben Aufzeichnungen; dein Originaltext bleibt unverändert. Exportiere vor einem Gerätewechsel oder dem Löschen von Browserdaten eine Sicherung.",
+    "chooseTemplate": "Arbeitsblatt wählen",
+    "draftHelp": "Jedes Blatt besitzt einen automatisch gespeicherten Entwurf. Als Eintrag speichern hält den aktuellen Stand fest; anschließend kannst du den Entwurf weiter bearbeiten.",
+    "loading": "Lokale Einträge werden geladen…",
+    "draftSaved": "Entwürfe werden automatisch in diesem Browser gespeichert.",
+    "invalidStorage": "Vorhandene Einträge konnten nicht gelesen werden. Zum Schutz der Originaldaten werden neue Eingaben nicht im Browser gespeichert. Exportiere die Originaldaten und separat deine aktuellen Eingaben.",
+    "saveFailed": "Speichern im Browser ist derzeit nicht möglich. Deine Eingaben bleiben nur auf dieser Seite. Exportiere vor dem Schließen eine Sicherung.",
+    "exportOriginal": "Originaldaten exportieren",
+    "saveRecord": "Als Eintrag speichern",
+    "savedRecord": "Eintrag gespeichert. Der Entwurf bleibt bearbeitbar.",
+    "exportDraft": "Diesen Entwurf exportieren",
+    "clearDraft": "Diesen Entwurf leeren",
+    "confirmClear": "Den Entwurf dieses Arbeitsblatts leeren? Gespeicherte Einträge bleiben erhalten.",
+    "confirmDelete": "Diesen Eintrag löschen? Exportiere zuerst eine Sicherung, wenn du ihn behalten möchtest.",
+    "confirmLoad": "Diesen Eintrag als Entwurf laden? Er ersetzt den aktuellen Entwurf des zugehörigen Blatts. Der gespeicherte Eintrag bleibt erhalten.",
+    "confirm": "Bestätigen",
+    "cancel": "Abbrechen",
+    "myRecords": "Meine Übungseinträge",
+    "exportBackup": "Vollständige Sicherung exportieren",
+    "importBackup": "Sicherung importieren",
+    "backupHelp": "Die Sicherung enthält Entwürfe und Einträge; bewahre sie sicher auf. Der Import führt Einträge zusammen und behält bestehende Entwürfe. Ungültige oder widersprüchliche Dateien ersetzen keine vorhandenen Daten.",
+    "imported": "Sicherung zusammengeführt. Bestehende Entwürfe wurden beibehalten.",
+    "importFailed": "Import fehlgeschlagen: ungültiges Format oder Version, widersprüchliche Einträge oder Datei über 10 MB. Vorhandene Daten wurden nicht ersetzt.",
+    "emptyRecords": "Noch keine Einträge. Fülle ein Arbeitsblatt aus und speichere deinen aktuellen Gedankengang.",
+    "record": "Übungseintrag",
+    "note": "Deine Notizen",
+    "loadDraft": "Als Entwurf laden",
+    "deleteRecord": "Eintrag löschen",
+    "ask": "Drei hilfreiche Fragen",
+    "example": "Ein Beispiel",
+    "limit": "Grenzen der Anwendung",
+    "mapInterests": "Interessen- und Grenzenkarte ausfüllen",
+    "nextTitle": "Lass Ergebnisse deine Antworten prägen",
+    "nextBody": "Beende jede Übung mit einer beobachtbaren Handlung und einem Rückblickdatum. Vergleiche später dein damaliges Urteil mit dem tatsächlichen Verlauf. Weitere Fälle und Themen ergänzen diesen Bereich."
+  },
+  "cases": [
+    {
+      "id": "scope-change",
+      "category": "Arbeit und Zusammenarbeit",
+      "title": "Ein Kunde ergänzt kurzfristig eine Anforderung",
+      "situation": "Zwei Tage vor der Lieferung bittet ein Kunde um eine angeblich einfache Zusatzfunktion zum ursprünglichen Termin. Der Aufwand ist ungeprüft, das Team bereits ausgelastet.",
+      "question": "Wie reagierst du?",
+      "options": [
+        {
+          "text": "Erst zusagen, dann das Team um Überstunden bitten.",
+          "feedback": "Das mindert den unmittelbaren Druck, macht aber unbekannten Aufwand zur Zusage auf Kosten des Teams. Ein Versprechen braucht bestätigten Aufwand, Ressourcen und Befugnis."
+        },
+        {
+          "text": "Jede Änderung ablehnen, weil sie außerhalb des Umfangs liegt.",
+          "feedback": "Das schützt den Umfang, kann aber einen echten dringenden Bedarf übersehen. Erkläre feste Grenzen; andernfalls besprecht einen Austausch im Umfang oder einen neuen Termin."
+        },
+        {
+          "text": "Den Bedarf klären und Optionen zu Umfang, Termin und Ressourcen anbieten.",
+          "feedback": "So entstehen konkrete Entscheidungen. Setze eine Frist für die Prüfung, damit sie nicht zum Aufschub wird, und lasse die befugte Person bestätigen."
+        }
+      ],
+      "principle": "Die Dringlichkeit zu verstehen verpflichtet nicht zu ungeprüften Zusagen. Antragsteller, Genehmiger und Kostenträger können verschiedene Personen sein.",
+      "action": "Versuche: Ich prüfe die Auswirkungen und lege heute Nachmittag zwei Optionen vor: Termin halten und Umfang anpassen oder Umfang halten und Termin anpassen. Danach bestätigen Sie bitte die Priorität.",
+      "review": "War der Zusatzumfang klar? Wer hat entschieden? Waren Folgen für Termin, Qualität und Arbeitszeit sichtbar?",
+      "template": "interests",
+      "chapter": "iq-fa"
+    },
+    {
+      "id": "public-criticism",
+      "category": "Arbeit und Zusammenarbeit",
+      "title": "Öffentliche Kritik in einer Besprechung",
+      "situation": "Ein Kollege sagt zu deinem Plan: „Du denkst nie richtig nach.“ Du schämst dich und weißt nicht, welches konkrete Risiko gemeint ist.",
+      "question": "Was sagst du als Nächstes?",
+      "options": [
+        {
+          "text": "Seine früheren Fehler vor allen aufzählen.",
+          "feedback": "Das schützt kurz den Stolz, macht die Sachfrage aber zum persönlichen Konflikt. Das Problem bleibt ungelöst und andere können schwerer beitragen."
+        },
+        {
+          "text": "Alles akzeptieren, um schnell fertig zu werden.",
+          "feedback": "Das senkt die Spannung, kann aber eine falsche Verallgemeinerung bestätigen, ohne den Korrekturbedarf zu klären. Prüfe später die Fakten."
+        },
+        {
+          "text": "Nach der konkreten Lücke fragen und Person und Plan trennen.",
+          "feedback": "„Welche Annahme meinst du?“ kann zur Sache zurückführen. Wiederholte Herabsetzung erfordert zusätzlich ein Gespräch über Grenzen."
+        }
+      ],
+      "principle": "Trenne konkrete Handlungen und Risiken von pauschalen Personenurteilen. Nützliche Hinweise anzunehmen bedeutet nicht, Demütigung zu akzeptieren.",
+      "action": "Frage zuerst: Nenne bitte die konkrete Lücke, damit wir sie prüfen. Später unter vier Augen: Rückmeldungen zum Plan sind willkommen; Verallgemeinerungen wie „du immer“ möchte ich vermeiden.",
+      "review": "Welche überprüfbare Lücke wurde gefunden? Hast du eine Grenze benannt? Hat sich die nächste Begegnung verändert?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "missed-deadline",
+      "category": "Arbeit und Zusammenarbeit",
+      "title": "Du weißt bereits, dass der Termin nicht hält",
+      "situation": "Deine Aufgabe ist blockiert und wird voraussichtlich drei Tage später fertig. Du fürchtest, unfähig zu wirken, und möchtest erst eine Lösung finden, bevor du berichtest.",
+      "question": "Wie gehst du mit der schlechten Nachricht um?",
+      "options": [
+        {
+          "text": "Schweigen und bis zuletzt versuchen aufzuholen.",
+          "feedback": "Das wahrt kurz den Schein, nimmt anderen aber Zeit zur Anpassung. Bleibt die Verzögerung, geraten Termin und Vertrauen zugleich in Gefahr."
+        },
+        {
+          "text": "Zur Beruhigung sofort einen noch engeren neuen Termin versprechen.",
+          "feedback": "Das beruhigt kurz. Ohne Beleg, dass die Blockade lösbar ist, wird Unsicherheit nur verschoben. Neue Zusagen brauchen Ressourcen und einen tragfähigen Umfang."
+        },
+        {
+          "text": "Bekannte Fakten, offene Fragen und mögliche Maßnahmen früh melden.",
+          "feedback": "Das macht Schwierigkeiten sichtbar, schafft aber Handlungsspielraum. Trenne bestätigte Folgen von Schätzungen und vereinbare das nächste Update."
+        }
+      ],
+      "principle": "Verantwortung heißt auch, Betroffene rechtzeitig handlungsfähig zu informieren. Ein Risiko zu melden ist etwas anderes als Schuld abzuwälzen.",
+      "action": "Fasse Fertiggestelltes, Blockade, erwartete Folgen, benötigte Beiträge und den nächsten Prüfzeitpunkt knapp zusammen.",
+      "review": "War die Warnung früh genug? Welche Annahmen waren falsch? Welches Signal könntest du künftig früher erkennen?",
+      "template": "decision",
+      "chapter": "iq-qi"
+    },
+    {
+      "id": "credit-dispute",
+      "category": "Arbeit und Zusammenarbeit",
+      "title": "Dein Beitrag wurde nicht erwähnt",
+      "situation": "Ein Kollege stellt ein gemeinsames Ergebnis vor, ohne deinen wesentlichen Anteil zu nennen. Du fühlst dich um Anerkennung gebracht, weißt aber nicht, ob es Absicht war.",
+      "question": "Was tust du zuerst?",
+      "options": [
+        {
+          "text": "Ihm in der Gruppe vorwerfen, sich deinen Verdienst anzueignen.",
+          "feedback": "Das zeigt den Ärger, kann ohne ausreichende Belege aber eskalieren. Trenne die überprüfbare Auslassung von Vermutungen über Motive."
+        },
+        {
+          "text": "Nichts sagen und auf Besserung hoffen.",
+          "feedback": "Das vermeidet sofortige Reibung, vermittelt aber vielleicht das Problem nicht. Wenn Anerkennung die Bewertung beeinflusst, lässt Schweigen die Regeln unverändert."
+        },
+        {
+          "text": "Privat nachfragen und eine konkrete Korrektur erbitten.",
+          "feedback": "Das lässt Raum für ein Versehen und verlangt eine sichtbare Änderung. Scheitern wiederholte Gespräche, lege die Fakten der für Beitragsregeln verantwortlichen Person vor."
+        }
+      ],
+      "principle": "Kläre Fakten vor Motiven und Anreizen. Betrachte sowohl diese Auslassung als auch die Erfassung und Anerkennung von Beiträgen im Team.",
+      "action": "Liste gemeinsames Ergebnis, individuelle Arbeit und vorhandene Belege auf. Bitte um eine konkrete Ergänzung im nächsten Bericht.",
+      "review": "Wurde die Zuordnung korrigiert? Ist die künftige Dokumentation klar? Gibt es mehr Belege zur Absicht?",
+      "template": "interests",
+      "chapter": "eq-fa"
+    },
+    {
+      "id": "family-advice",
+      "category": "Alltag und Beziehungen",
+      "title": "Die andere Person will gehört werden, du gibst Ratschläge",
+      "situation": "Ein Familienmitglied erzählt von einem anstrengenden Tag. Du schlägst sofort Lösungen vor und hörst: „Du hörst mir gar nicht zu.“ Deine gute Absicht scheint missverstanden.",
+      "question": "Wie kannst du jetzt reagieren?",
+      "options": [
+        {
+          "text": "Erklären, warum deine Ratschläge richtig sind.",
+          "feedback": "Das ergänzt Argumente, verfehlt aber womöglich weiter den aktuellen Bedarf. Ob ein Rat nützlich ist und ob jemand dafür bereit ist, sind verschiedene Fragen."
+        },
+        {
+          "text": "Beschließen, nie wieder eine Meinung zu äußern.",
+          "feedback": "Das verhindert kurz eine weitere Enttäuschung, macht aber aus einem Gesprächsfehler einen Rückzug. Frage nach der gewünschten Unterstützung."
+        },
+        {
+          "text": "Das Gehörte spiegeln und fragen, ob Zuhören oder gemeinsame Ideen helfen.",
+          "feedback": "Die Person kann wählen. Wenn dir ebenfalls Kraft fehlt, vereinbart ehrlich eine Zeit, zu der du aufmerksam zuhören kannst."
+        }
+      ],
+      "principle": "Prüfe zuerst, welche Hilfe gewünscht ist. Dein Wunsch nach einer Lösung bedeutet nicht automatisch, dass die andere Person einen Plan möchte.",
+      "action": "Versuche: Es klingt, als hättest du heute viel getragen. Soll ich erst zuhören oder mit dir über den nächsten Schritt nachdenken?",
+      "review": "Wie beschrieb die Person ihren Bedarf? Hast du ihn richtig wiedergegeben? Kam der Rat erst nach einer Einladung?",
+      "template": "emotion",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "help-overload",
+      "category": "Alltag und Beziehungen",
+      "title": "Ständiges Helfen verdrängt deine eigene Zeit",
+      "situation": "Ein Freund bittet häufig kurzfristig um Hilfe. Absagen fällt dir schwer, doch Schlaf und eigene Pläne leiden. Du sagst zu und wirst zugleich ärgerlich.",
+      "question": "Wie antwortest du diesmal?",
+      "options": [
+        {
+          "text": "Weiter zusagen und hoffen, dass er deine Müdigkeit bemerkt.",
+          "feedback": "Das erhält oberflächliche Harmonie, zeigt aber keine echte Grenze. Wiederholte Zustimmung kann als freie Kapazität verstanden werden."
+        },
+        {
+          "text": "Alle alten Vorwürfe aufzählen und jede weitere Hilfe ausschließen.",
+          "feedback": "Die Last endet schnell, doch angestauter Ärger kann zum Rundumschlag werden. Ohne Sicherheitsrisiko kannst du zunächst klare aktuelle und künftige Grenzen nennen."
+        },
+        {
+          "text": "Sagen, was nicht geht, und nur leistbare Hilfe anbieten.",
+          "feedback": "Das kann enttäuschen, verankert die Beziehung aber in realer Kapazität. Alternativen sind freiwillig; du musst nicht dieselbe Last übernehmen, um guten Willen zu beweisen."
+        }
+      ],
+      "principle": "Verständnis für Schwierigkeiten macht dich nicht für deren Lösung verantwortlich. Grenzen beschreiben deine Handlungen, nicht vorgeschriebene Gedanken anderer.",
+      "action": "Versuche: Diese Woche kann ich das nicht übernehmen. Samstag kann ich fünfzehn Minuten helfen. Reicht das nicht, brauchst du eine andere Lösung.",
+      "review": "Hast du deine Grenze eingehalten? Hast du aus Schuldgefühl mehr angeboten? Respektiert die Person ein klares Nein?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "team-disagreement",
+      "category": "Urteilen und Entscheiden",
+      "title": "Das Team kann sich zwischen zwei Plänen nicht entscheiden",
+      "situation": "Beide Pläne haben Anhänger. Vorteile werden wiederholt, Risiken verschieden eingeschätzt und niemand hat geklärt, wer abschließend entscheidet.",
+      "question": "Wie bringst du die Diskussion voran?",
+      "options": [
+        {
+          "text": "Weitere Gründe suchen, warum deine Seite recht hat.",
+          "feedback": "Das kann Belege ergänzen oder nur Positionen wiederholen. Prüfe zuerst gemeinsame Ziele und Kriterien."
+        },
+        {
+          "text": "Sofort abstimmen und die Mehrheit entscheiden lassen.",
+          "feedback": "Das passt bei vereinbarter Abstimmung und geeigneten Folgen. Trägt eine Minderheit das Risiko oder ist Verantwortung unklar, ersetzen Stimmen weder Befugnis noch Belege."
+        },
+        {
+          "text": "Kriterien und Befugnisse klären, dann einen kleinen umkehrbaren Versuch planen.",
+          "feedback": "So wird die Debatte zum beobachtbaren Vergleich. Lege Dauer, Kostenobergrenze und entscheidungsrelevante Ergebnisse fest, sonst kann auch der Versuch endlos werden."
+        }
+      ],
+      "principle": "Trenne Wertabwägungen von faktischen Differenzen. Erstere brauchen eine verantwortete Entscheidung; Informationen oder Versuche können Letztere verkleinern.",
+      "action": "Alle notieren Ziel, meistgefürchtetes Scheitern und Belege, die ihre Meinung ändern würden. Vereinbart danach eine befristete Prüfung.",
+      "review": "Welcher Beleg änderte die Wahl? Wer entschied? Wurde der Versuch wie vereinbart beendet oder erweitert?",
+      "template": "decision",
+      "chapter": "iq-shu"
+    },
+    {
+      "id": "sunk-cost",
+      "category": "Urteilen und Entscheiden",
+      "title": "Nach großem Einsatz weitermachen oder aufhören?",
+      "situation": "Seit zwei Monaten arbeitest du an einem Plan, dessen zentrale Annahme ungeprüft bleibt. Weitermachen scheint hoffnungsvoll; aufhören fühlt sich nach verschwendeter Mühe an.",
+      "question": "Wie entscheidest du über den nächsten Schritt?",
+      "options": [
+        {
+          "text": "Unbedingt fertig werden, weil schon so viel investiert wurde.",
+          "feedback": "Den Einsatz zu würdigen ist verständlich. Bereits verbrauchte Zeit beweist aber nicht den Wert des nächsten Schritts. Vergleiche künftigen Nutzen, Kosten und Alternativen."
+        },
+        {
+          "text": "Bei der ersten Schwierigkeit sofort aufgeben.",
+          "feedback": "Das vermeidet weiteren Aufwand, kann aber vor einer lösbaren Hürde zu früh sein. Unterscheide vorübergehende Hindernisse von einer widerlegten Grundannahme."
+        },
+        {
+          "text": "Künftigen Wert neu bewerten und einen letzten Test begrenzen.",
+          "feedback": "Weitergehen und Aufhören werden an beobachtbare Bedingungen gebunden. Der Test lohnt nur, wenn er neue Informationen zu tragbaren Kosten liefert."
+        }
+      ],
+      "principle": "Erkenne die Enttäuschung an und bewerte dann die Zukunft. Du kannst das Gelernte schätzen und trotzdem einen nicht mehr lohnenden Plan beenden.",
+      "action": "Notiere neue Belege, die eine weitere Woche liefern könnte, den maximalen Zusatzaufwand und Ergebnisse, bei denen du aufhörst oder umsteuerst.",
+      "review": "Hast du die Stoppregel eingehalten? Falls du sie geändert hast: wegen neuer Informationen oder weil der Verlust schwerer einzugestehen war?",
+      "template": "decision",
+      "chapter": "integration"
+    }
+  ],
+  "templates": [
+    {
+      "id": "decision",
+      "title": "Entscheidungsjournal",
+      "description": "Halte Gründe vor dem Handeln fest und gleiche sie später mit dem Ergebnis ab.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Die Entscheidung",
+          "hint": "Formuliere die konkrete Frage, Frist und bestätigten Fakten."
+        },
+        {
+          "id": "options",
+          "label": "Mögliche Optionen",
+          "hint": "Notiere mindestens zwei Optionen, gegebenenfalls auch Aufschub, jeweils mit Nutzen und Kosten."
+        },
+        {
+          "id": "assumptions",
+          "label": "Belege und Unsicherheit",
+          "hint": "Worauf stütze ich mich? Welche Information fehlt? Welches Gegenbeispiel würde meine Meinung ändern?"
+        },
+        {
+          "id": "choice",
+          "label": "Wahl und Erwartung",
+          "hint": "Was wähle ich und warum? Was erwarte ich? Nenne bei einer Wahrscheinlichkeit das zugehörige Ereignis."
+        },
+        {
+          "id": "boundary",
+          "label": "Handlung und Stoppbedingungen",
+          "hint": "Wer tut was bis wann? Wie hoch ist der maximale Einsatz? Welches Signal verlangt Pause oder Anpassung?"
+        },
+        {
+          "id": "review",
+          "label": "Rückblickdatum und Ergebnis",
+          "hint": "Lege zuerst einen Termin fest. Notiere später das Ergebnis und unterscheide Urteilsqualität von Glück."
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "title": "Gefühlsjournal",
+      "description": "Trenne Fakten, Deutungen und Bedürfnisse, um eine Reaktion wählen zu können.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Was ist passiert?",
+          "hint": "Beschreibe das Geschehen wie eine Kamera, zunächst ohne Motive zu vermuten."
+        },
+        {
+          "id": "signals",
+          "label": "Gefühle und Körpersignale",
+          "hint": "Benenne das Gefühl möglichst genau; Intensität und körperliche Empfindungen können ergänzt werden."
+        },
+        {
+          "id": "story",
+          "label": "Meine Deutung",
+          "hint": "Welches Urteil kam mir in den Sinn? Welche andere Erklärung wäre plausibel?"
+        },
+        {
+          "id": "needs",
+          "label": "Was mir wichtig ist und was ich brauche",
+          "hint": "Was möchte ich schützen? Welche Bedürfnisse kann ich selbst erfüllen, für welche brauche ich eine Bitte?"
+        },
+        {
+          "id": "response",
+          "label": "Mögliche Reaktionen",
+          "hint": "Pausieren, klären, bitten, ablehnen oder gehen? Wähle einen machbaren Schritt."
+        },
+        {
+          "id": "review",
+          "label": "Rückblick und Anpassung",
+          "hint": "Wann schaue ich zurück? Was geschah danach? Was behalte oder ändere ich beim nächsten Mal?"
+        }
+      ]
+    },
+    {
+      "id": "conversation",
+      "title": "Schwieriges Gespräch vorbereiten",
+      "description": "Formuliere dein Anliegen als konkrete, klare Bitte, auf die man antworten kann.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Ereignis und Gesprächsziel",
+          "hint": "Was ist genau passiert? Welches einzelne Problem soll das Gespräch lösen?"
+        },
+        {
+          "id": "perspectives",
+          "label": "Was beiden Seiten wichtig sein könnte",
+          "hint": "Trenne Bestätigtes von Vermutungen und bereite eine klärende Frage vor."
+        },
+        {
+          "id": "message",
+          "label": "Meine einleitenden Worte",
+          "hint": "Beschreibe Verhalten, Wirkung und Bedürfnisse. Vermeide „du immer“ und persönliche Etiketten."
+        },
+        {
+          "id": "request",
+          "label": "Konkrete Bitte und Optionen",
+          "hint": "Wer soll was bis wann tun? Welche Alternativen gibt es, falls das nicht möglich ist?"
+        },
+        {
+          "id": "boundary",
+          "label": "Grenzen und Ausstieg",
+          "hint": "Welche Äußerungen oder Forderungen sind unakzeptabel? Wie pausierst oder handelst du bei Wiederholung?"
+        },
+        {
+          "id": "review",
+          "label": "Vereinbarung und Rückblick",
+          "hint": "Was haben beide tatsächlich zugesagt? Wann prüft ihr die Umsetzung? Welche Differenzen bleiben?"
+        }
+      ]
+    },
+    {
+      "id": "interests",
+      "title": "Interessen- und Grenzenkarte",
+      "description": "Erkenne Beteiligte, Anreize, Kosten und deinen Entscheidungsraum.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Gemeinsames Problem und Ziel",
+          "hint": "Bearbeiten alle dieselbe Frage? Woran wäre eine Lösung erkennbar?"
+        },
+        {
+          "id": "people",
+          "label": "Menschen und Bedürfnisse",
+          "hint": "Wer bittet, entscheidet, handelt und ist betroffen? Was möchte jeder gewinnen oder vermeiden?"
+        },
+        {
+          "id": "incentives",
+          "label": "Regeln und Anreize",
+          "hint": "Welches Verhalten wird belohnt oder sanktioniert? Wer zahlt, wer profitiert? Was ist nur Vermutung?"
+        },
+        {
+          "id": "power",
+          "label": "Ressourcen, Informationen und Befugnisse",
+          "hint": "Wer verfügt über Wesentliches? Was kann ich entscheiden, wessen Zustimmung brauche ich?"
+        },
+        {
+          "id": "boundary",
+          "label": "Verhandelbares und feste Grenzen",
+          "hint": "Was lässt sich tauschen, was klar ablehnen? Wie handle ich bei einer Grenzüberschreitung?"
+        },
+        {
+          "id": "proposal",
+          "label": "Vorschlag und Überprüfung",
+          "hint": "Nenne konkreten Vorschlag, Verantwortlichen und Prüftermin. Welche Rückmeldung würde das Funktionieren zeigen?"
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "positions-needs",
+      "title": "Bedürfnisse hinter Positionen",
+      "idea": "„Es muss heute geliefert werden“ ist eine Position. Dahinter können Zusagen, Bewertung, Sorgen oder ein realer Einsatztermin stehen. Behandle sie als prüfbare Vermutungen statt als feststehende Motive.",
+      "questions": [
+        "Was möchte die andere Person erreichen oder vermeiden?",
+        "Welcher Teil der Bitte ist am wenigsten veränderbar?",
+        "Würde sie einen anderen Weg zur Erfüllung des Bedarfs besprechen?"
+      ],
+      "example": "Ein vollständiger Bericht wird bis Freitag verlangt. Nach Rückfrage braucht die Sitzung nur drei Schlussfolgerungen: Eine Zusammenfassung kann vorab kommen, der vollständige Bericht zu einem vereinbarten Folgetermin.",
+      "boundary": "Menschen können oder wollen nicht immer alle Bedürfnisse erklären. Prüfe Fakten, statt ihnen zu sagen, was sie „eigentlich“ wollen."
+    },
+    {
+      "id": "incentives",
+      "title": "Anreize hinter Verhalten erkennen",
+      "idea": "Wiederholtes Verhalten kann mit Belohnung, Sanktionen und Kostenverteilung zusammenhängen. Appelle an die Haltung ändern nicht unbedingt Regeln, unter denen falsches Verhalten vorteilhaft ist.",
+      "questions": [
+        "Welches Verhalten erhält derzeit am leichtesten Anerkennung?",
+        "Wer trägt Zusatzkosten, wenn richtig gehandelt wird?",
+        "Wie lassen sich Verantwortung, Ressourcen und Bewertung besser abstimmen?"
+      ],
+      "example": "Wird nur nach Aufgabenzahl bewertet, bleiben komplexe Aufgaben liegen. Neben Verantwortungsgefühl können Schwierigkeit, Qualität und Zusammenarbeit in die Bewertung einfließen.",
+      "boundary": "Anreize sind nur eine Erklärung. Fähigkeiten, Informationen, Ressourcen oder vorübergehender Druck können dasselbe Verhalten erzeugen; vergleiche die Belege."
+    },
+    {
+      "id": "decision-rights",
+      "title": "Teilnahme, Einfluss und Entscheidungsbefugnis trennen",
+      "idea": "Beraten, ausführen und Änderungen genehmigen sind verschiedene Rollen. Verantwortung ohne Ressourcen oder Befugnis kann scheinbare Zustimmung erzeugen, die niemand einlösen kann.",
+      "questions": [
+        "Wer darf Umfang, Termine oder Ressourcen ändern?",
+        "Wer trägt die Folgen dieser Entscheidung?",
+        "Hat die ausführende Person nötige Informationen und Unterstützung?"
+      ],
+      "example": "Der Kundenkontakt wünscht Zusatzarbeit, aber eine andere Person muss das Budget genehmigen. Lasse passende Entscheider die Abwägung bestätigen, bevor du das Team verpflichtest.",
+      "boundary": "Klare Befugnisse bedeuten nicht, Betroffene zu übergehen. Dokumentiere auch unter Zeitdruck vorläufige Entscheidungen und bestätige sie zeitnah."
+    },
+    {
+      "id": "negotiation",
+      "title": "Streit in verhandelbare Optionen übersetzen",
+      "idea": "Zerlege ein Ja-oder-Nein in Umfang, Zeit, Qualität, Ressourcen und Verantwortung. Manche Bedingungen sind tauschbar; andere erfordern anzuerkennen, dass nicht alles gleichzeitig geht.",
+      "questions": [
+        "Was ist jeder Seite am wichtigsten?",
+        "Was kann ich anpassen und wer trägt die Kosten?",
+        "Welcher kleine, umkehrbare Schritt könnte eine Option prüfen?"
+      ],
+      "example": "Bei mehr Funktionen und früherem Termin sind ein kleinerer Erstumfang, bestätigte Zusatzressourcen oder zwei Lieferungen mögliche Optionen. Mache die jeweiligen Kosten sichtbar.",
+      "boundary": "Nicht alles ist ein Geschäft. Respekt, Sicherheit und grundlegende Zusagen dürfen nicht durch vage Tauschgeschäfte verdeckt werden. Biete nichts außerhalb deiner Befugnis an."
+    },
+    {
+      "id": "boundaries",
+      "title": "Grenzen sind Zusagen über eigenes Handeln",
+      "idea": "Eine Grenze beschreibt, was du unter welchen Umständen tust. Sie lässt anderen ihre Wahl und klärt, was du nicht unbegrenzt übernimmst.",
+      "questions": [
+        "Welche konkreten Verhaltensweisen akzeptiere ich und welche nicht?",
+        "Welche ausführbare Handlung folgt, wenn es wieder geschieht?",
+        "Vermische ich Bitten, Erwartungen und feste Grenzen?"
+      ],
+      "example": "„Schreib mir nicht spätabends“ ist eine Bitte. „Nach 20 Uhr antworte ich am Folgetag; nutze für Dringendes den vereinbarten Kanal“ beschreibt deine eigene Handlungsgrenze.",
+      "boundary": "Grenzen müssen reale Pflichten und Zusagen berücksichtigen. Bei Bedrohung oder anhaltenden Übergriffen haben Sicherheit und geeignete Unterstützung Vorrang; Aushalten ist nicht die Übung."
+    },
+    {
+      "id": "escalation",
+      "title": "Wann reden, eskalieren oder aussteigen?",
+      "idea": "Ein Missverständnis lässt sich klären; wiederholter Vertragsbruch kann neue Kooperationsregeln verlangen. Mehr Erklärung ersetzt nicht immer fehlende Ressourcen, Befugnisse oder Sicherheit.",
+      "questions": [
+        "Wiederholt sich das Problem trotz klarer Absprachen?",
+        "Fehlen Informationen, Fähigkeiten, Ressourcen oder der Wille zur Einhaltung?",
+        "Wer sollte eingreifen oder unter welchen Bedingungen endet die Zusammenarbeit?"
+      ],
+      "example": "Trotz mehrerer Absprachen fehlen notwendige Unterlagen. Fasse Bitten, Termine und Auswirkungen für die verantwortliche Person zusammen; pausiere nötigenfalls betroffene Arbeit nach den vereinbarten Bedingungen.",
+      "boundary": "Eskalation sollte Fakten, Folgen und nötige Entscheidungen betreffen, nicht Strafe oder Sieg. Kündige Ausstiegsbedingungen möglichst vorher an und behandle reale Sicherheitsrisiken unverzüglich."
+    }
+  ]
+}

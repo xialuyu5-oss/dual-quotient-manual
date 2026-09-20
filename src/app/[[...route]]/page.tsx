@@ -5,6 +5,8 @@ import Manual from "@/views/manual";
 import Chapter from "@/views/chapter";
 import Assessment from "@/views/assessment-page";
 import Practice from "@/views/practice-page";
+import WorkshopPage from "@/views/workshop-page";
+import { getWorkshop } from "@/lib/workshop/server";
 import { getAllChapters, getAdjacentChapters, getChapter, getChaptersByPart, getMatrix } from "@/lib/content";
 import { buildLocales, getTranslator, parseRoute } from "@/lib/i18n/server";
 import { LOCALES, localizedPath } from "@/lib/i18n/locales";
@@ -13,7 +15,7 @@ type Props = {params: Promise<{route?: string[]}>};
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  const paths = [[], ["manual"], ["assessment"], ["practice"], ...getAllChapters().map(ch => ["manual", ch.slug])];
+  const paths = [[], ["manual"], ["assessment"], ["practice"], ["workshop"], ...getAllChapters().map(ch => ["manual", ch.slug])];
   return [
     ...paths.map(route => ({route})),
     ...buildLocales().flatMap(locale => paths.map(route => ({route: [locale, ...route]}))),
@@ -24,7 +26,7 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   const {locale, path, parts} = parseRoute((await params).route);
   const t = getTranslator(locale);
   const chapter = parts[0] === "manual" && parts.length === 2 ? getChapter(parts[1], locale) : null;
-  const name = chapter ? `${chapter.label} ${chapter.title}` : t(path === "/manual" ? "目录" : path === "/assessment" ? "自测" : path === "/practice" ? "日课" : "双商训练手册");
+  const name = chapter ? `${chapter.label} ${chapter.title}` : t(path === "/manual" ? "目录" : path === "/assessment" ? "自测" : path === "/practice" ? "日课" : path === "/workshop" ? "实践工坊" : "双商训练手册");
   const site = "https://xialuyu5-oss.github.io/dual-quotient-manual";
   return {
     title: path === "/" ? t("双商训练手册 · 从聪明到智慧，从术器到道法") : `${name} · ${t("双商训练手册")}`,
@@ -40,6 +42,7 @@ export default async function Page({params}: Props) {
   const {locale, path, parts} = parseRoute((await params).route);
   if (path === "/") return <Home groups={getChaptersByPart(locale)} matrix={getMatrix(locale)} />;
   if (path === "/manual") return <Manual groups={getChaptersByPart(locale)} />;
+  if (path === "/workshop") return <WorkshopPage key={locale} content={getWorkshop(locale)} />;
   if (path === "/assessment" || path === "/practice") {
     const chapters = Object.fromEntries(getAllChapters(locale).map(ch => [ch.slug, {label: ch.label, title: ch.title}]));
     return path === "/assessment" ? <Assessment chapters={chapters} /> : <Practice chapters={chapters} />;

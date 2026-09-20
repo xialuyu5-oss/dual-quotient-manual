@@ -1,0 +1,494 @@
+{
+  "title": "Practice workshop",
+  "intro": "Bring the handbook into one real situation: understand it, choose an action, keep a record, and revise your judgment in light of the result.",
+  "ui": {
+    "eyebrow": "Dual Quotient Manual · Room to grow",
+    "growing": "Start with three modules, with more cases, tools and topics to come. Choose just one problem that matters to you today.",
+    "sectionNav": "Workshop modules",
+    "items": "items",
+    "casesTitle": "Everyday scenario library",
+    "casesIntro": "Choose a response first, then consider its benefits, costs and conditions.",
+    "workbookTitle": "Fillable workbook",
+    "workbookIntro": "Write down decisions, emotions, conversations and boundaries so you can revisit them.",
+    "topicsTitle": "Interests, incentives and boundaries",
+    "topicsIntro": "Consider people's needs alongside resources, rules, decision authority and costs.",
+    "caseNote": "These fictional cases draw on common situations. With incomplete information, several responses may be reasonable. Explore trade-offs rather than receiving a personality score.",
+    "filter": "Filter scenarios",
+    "allCases": "All scenarios",
+    "tradeoff": "Trade-offs in this choice",
+    "chooseFirst": "Choose a response to see what it might resolve and what it might leave unresolved.",
+    "principle": "Understand the issue",
+    "action": "One step to try",
+    "review": "Review afterward",
+    "openWorkbook": "Open the matching worksheet",
+    "relatedChapter": "Read the related chapter",
+    "privacy": "Your writing stays in this browser and is not uploaded. All languages share the same records; your original words stay unchanged. Export a backup before changing devices or clearing browser data.",
+    "chooseTemplate": "Choose a worksheet",
+    "draftHelp": "Each worksheet has its own automatically saved draft. Save a record to keep a snapshot of your thinking; you can then continue editing the draft.",
+    "loading": "Loading local records…",
+    "draftSaved": "Drafts are saved automatically in this browser.",
+    "invalidStorage": "Existing records could not be read. To protect the original data, new writing will not be saved to browser storage. Export the original backup and separately export your current writing.",
+    "saveFailed": "Browser storage is unavailable. Your current writing is held only on this page. Export a backup before closing it to avoid losing your work.",
+    "exportOriginal": "Export original backup",
+    "saveRecord": "Save a record",
+    "savedRecord": "A record was saved. You can keep editing the draft.",
+    "exportDraft": "Export this draft",
+    "clearDraft": "Clear this draft",
+    "confirmClear": "Clear this worksheet's draft? Saved records will remain.",
+    "confirmDelete": "Delete this record? Export a backup first if you need to keep it.",
+    "confirmLoad": "Load this record as a draft? It will replace this worksheet's current draft. The saved record will remain.",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "myRecords": "My practice records",
+    "exportBackup": "Export full backup",
+    "importBackup": "Import backup",
+    "backupHelp": "Backups contain drafts and records; keep them somewhere safe. Import merges records and keeps existing drafts. Conflicting or invalid files will not replace your data.",
+    "imported": "Backup merged. Existing drafts were kept.",
+    "importFailed": "Import failed: invalid format or version, conflicting records, or a file larger than 10 MB. Your existing data was not replaced.",
+    "emptyRecords": "No saved records yet. Fill in a worksheet and save a snapshot of your thinking.",
+    "record": "Practice record",
+    "note": "Your notes",
+    "loadDraft": "Load as draft",
+    "deleteRecord": "Delete record",
+    "ask": "Three questions to ask",
+    "example": "An example",
+    "limit": "Limits and context",
+    "mapInterests": "Fill in the interests and boundaries map",
+    "nextTitle": "Let outcomes inform your answers",
+    "nextBody": "End each exercise with one observable action and a review date. When you return, compare your earlier judgment with what happened. New cases and topics will continue to be added here."
+  },
+  "cases": [
+    {
+      "id": "scope-change",
+      "category": "Work and collaboration",
+      "title": "A client adds a last-minute request",
+      "situation": "Two days before delivery, a client asks for an extra feature they say should be simple, within the original deadline. You have not estimated the work, and the team's schedule is full.",
+      "question": "How would you respond?",
+      "options": [
+        {
+          "text": "Agree first, then ask the team to work overtime.",
+          "feedback": "This eases immediate pressure but turns unknown effort into a promise at the team's expense. A commitment needs a verified estimate, resources and authority."
+        },
+        {
+          "text": "Say it is out of scope and refuse all changes.",
+          "feedback": "This protects scope but may miss a genuinely urgent need. Explain any firm constraints; otherwise discuss replacing scope or changing the date."
+        },
+        {
+          "text": "Clarify the need, then offer scope, timing and resource options.",
+          "feedback": "This makes the trade-offs clear, but set a deadline for the estimate so that checking does not become delay. Have the authorized person confirm the choice."
+        }
+      ],
+      "principle": "Understanding a client's urgency does not require making unverified commitments. The requester, approver and person bearing the cost may be different people.",
+      "action": "Try: I will check the impact and provide two options this afternoon: keep the date and change the scope, or keep the scope and change the date. Please then confirm your priority.",
+      "review": "Was the extra scope clear? Who approved the decision? Were the costs to timing, quality and working hours visible?",
+      "template": "interests",
+      "chapter": "iq-fa"
+    },
+    {
+      "id": "public-criticism",
+      "category": "Work and collaboration",
+      "title": "Being criticized in a meeting",
+      "situation": "During a discussion, a colleague says, “You never think things through.” You feel embarrassed and do not know which risk they mean.",
+      "question": "What would you say next?",
+      "options": [
+        {
+          "text": "Point out mistakes they have made in the past.",
+          "feedback": "This may briefly protect your pride, but it turns a discussion of the plan into a personal conflict. The factual issue remains unresolved, and others may find it harder to contribute."
+        },
+        {
+          "text": "Accept everything to end the discussion quickly.",
+          "feedback": "This can reduce tension, but you may accept an inaccurate generalization without learning what needs correcting. Check the facts once things settle."
+        },
+        {
+          "text": "Ask for the specific omission and separate the person from the plan.",
+          "feedback": "This can restore a factual discussion: Which assumption do you mean? Repeated belittling may also require a separate conversation about boundaries."
+        }
+      ],
+      "principle": "Separate specific behavior and risks from broad judgments about a person. Accepting useful information does not mean accepting humiliating language.",
+      "action": "Ask: Please identify the omission so we can check it. Later, say privately: I welcome feedback on the plan and would like us to avoid generalizations such as “you always.”",
+      "review": "What verifiable omission did you find? Did you express a boundary? Did the next interaction change?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "missed-deadline",
+      "category": "Work and collaboration",
+      "title": "You know the deadline will be missed",
+      "situation": "Your task is blocked and now looks likely to finish three days late. You worry that reporting it will make you look incapable, so you want to find a solution before saying anything.",
+      "question": "How will you handle the bad news?",
+      "options": [
+        {
+          "text": "Stay quiet and hope to catch up at the last moment.",
+          "feedback": "This protects appearances briefly but leaves others less time to adjust. If delivery is still late, the problem becomes a risk to both the schedule and trust."
+        },
+        {
+          "text": "Promise an even tighter new date to reassure everyone.",
+          "feedback": "This may comfort people briefly, but without evidence that the blocker can be removed, it only postpones uncertainty. New commitments need resources and scope to support them."
+        },
+        {
+          "text": "Report the known facts, unknowns and possible remedies early.",
+          "feedback": "This exposes the difficulty but gives the team room to adapt. Distinguish confirmed effects from estimates and agree when you will update them next."
+        }
+      ],
+      "principle": "Taking responsibility includes giving affected people timely information they can act on. Reporting a risk is different from shifting blame.",
+      "action": "Write a short update: work completed, blocker, expected impact, who needs to do what, and the next checkpoint.",
+      "review": "Was the warning early enough? Which assumptions proved wrong? What signal could you notice sooner next time?",
+      "template": "decision",
+      "chapter": "iq-qi"
+    },
+    {
+      "id": "credit-dispute",
+      "category": "Work and collaboration",
+      "title": "Your contribution was left out",
+      "situation": "A colleague presents a shared achievement without mentioning your key contribution. You feel they took the credit, but do not yet know whether it was intentional.",
+      "question": "What would you do first?",
+      "options": [
+        {
+          "text": "Accuse them of stealing credit in the group chat.",
+          "feedback": "This makes your frustration visible but may escalate conflict before the evidence is clear. Separate a verifiable omission from a guess about motives."
+        },
+        {
+          "text": "Say nothing and hope they notice next time.",
+          "feedback": "This avoids immediate friction but may leave them unaware of the issue. If attribution affects evaluation, continued silence leaves the same rules in place."
+        },
+        {
+          "text": "Check privately, then request a specific correction.",
+          "feedback": "This leaves room for an honest omission while asking for an observable change. If repeated conversations fail, bring the facts to the person responsible for contribution records."
+        }
+      ],
+      "principle": "Establish facts before interpreting motives and incentives. Address both this omission and how the team records and recognizes work.",
+      "action": "List the shared result, each person's work and existing evidence. Ask for a specific acknowledgment in the next update.",
+      "review": "Was the attribution corrected? Is future recordkeeping clear? Do you have more evidence about intent?",
+      "template": "interests",
+      "chapter": "eq-fa"
+    },
+    {
+      "id": "family-advice",
+      "category": "Life and relationships",
+      "title": "They want to be heard; you offer solutions",
+      "situation": "A family member says they have had an exhausting day. You immediately suggest fixes, and they say, “You are not listening.” You feel your good intentions were misunderstood.",
+      "question": "How could you respond now?",
+      "options": [
+        {
+          "text": "Explain why your advice is correct.",
+          "feedback": "This adds reasoning but may still miss their immediate need. Whether advice is useful and whether someone is ready for it are separate questions."
+        },
+        {
+          "text": "Decide never to offer an opinion again.",
+          "feedback": "This avoids another disappointment for now but turns a mismatch in one conversation into withdrawal. Ask what kind of support they want."
+        },
+        {
+          "text": "Reflect what you heard, then ask whether they want listening or ideas.",
+          "feedback": "This lets them choose the support they need. If you also lack energy, honestly agree on a time when you can listen properly."
+        }
+      ],
+      "principle": "Check what help the other person wants. Your wish to solve a problem does not automatically mean they want a plan.",
+      "action": "Try: It sounds like you have been holding everything together today. Would you like me to listen first, or think through the next step with you?",
+      "review": "How did they describe their need? Did you reflect it accurately? Was advice offered after an invitation?",
+      "template": "emotion",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "help-overload",
+      "category": "Life and relationships",
+      "title": "Helping others is taking all your time",
+      "situation": "A friend often asks for help at short notice. You find it hard to refuse, but it is affecting your sleep and plans. You agree while becoming increasingly resentful.",
+      "question": "How will you answer this request?",
+      "options": [
+        {
+          "text": "Keep agreeing and hope they realize you are tired.",
+          "feedback": "This maintains surface harmony but gives no clear boundary. They may interpret your repeated agreement as spare capacity."
+        },
+        {
+          "text": "List every past grievance and say you will never help again.",
+          "feedback": "This stops the burden quickly, but accumulated frustration can become a sweeping accusation. If there is no safety concern, first state clear limits for this request and future ones."
+        },
+        {
+          "text": "Explain what you cannot do and offer only help you can deliver.",
+          "feedback": "They may be disappointed, but the relationship rests on real capacity. Alternatives are optional; you need not take on the same burden to prove goodwill."
+        }
+      ],
+      "principle": "Understanding someone's difficulty does not make solving it your responsibility. A boundary describes your actions, not what someone else must think.",
+      "action": "Try: I cannot take this on this week. I can spend fifteen minutes on it on Saturday. If that is not enough, you will need another arrangement.",
+      "review": "Did you uphold your limit? Did guilt lead you to add more? Can the other person respect a clear refusal?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "team-disagreement",
+      "category": "Judgment and choices",
+      "title": "The team cannot choose between two plans",
+      "situation": "Both plans have supporters. People keep repeating advantages, disagree about the risks and have not agreed who will make the final decision.",
+      "question": "How would you move the discussion forward?",
+      "options": [
+        {
+          "text": "Find more arguments proving your side is right.",
+          "feedback": "This may add evidence or simply repeat a position. First check whether both sides share a goal and decision criteria."
+        },
+        {
+          "text": "Vote immediately and let the majority decide.",
+          "feedback": "This works when voting is agreed and appropriate to the consequences. If a minority bears the risks or responsibility is unclear, votes cannot replace authority and evidence."
+        },
+        {
+          "text": "Agree on criteria and decision authority, then design a small reversible trial.",
+          "feedback": "This turns debate into observable comparison. Set a time limit, cost ceiling and results that would change the choice, or the trial itself may drift indefinitely."
+        }
+      ],
+      "principle": "Separate disagreements about values from disagreements about facts. The former require an accountable decision; information or small trials may narrow the latter.",
+      "action": "Each person writes the goal, the failure they most fear and the evidence that would change their mind. Then agree on a time-limited check.",
+      "review": "Which evidence changed the choice? Who owned the decision? Did the trial stop or expand as agreed?",
+      "template": "decision",
+      "chapter": "iq-shu"
+    },
+    {
+      "id": "sunk-cost",
+      "category": "Judgment and choices",
+      "title": "Should you continue after investing so much?",
+      "situation": "You have spent two months on a plan, but its central assumption remains untested. Continuing still seems hopeful; stopping feels like wasting all your effort.",
+      "question": "How will you decide what comes next?",
+      "options": [
+        {
+          "text": "Insist on finishing because you have already invested so much.",
+          "feedback": "Wanting to honor your effort is understandable, but time already spent does not prove the next step is worthwhile. Compare future benefits, costs and alternatives."
+        },
+        {
+          "text": "Give up as soon as difficulty appears.",
+          "feedback": "This avoids further expenditure but may mean leaving a solvable problem too soon. Distinguish a temporary obstacle from a disproven core assumption."
+        },
+        {
+          "text": "Reassess future value and set limits on one final test.",
+          "feedback": "This makes both continuing and stopping depend on observable conditions. The test is useful only if it can provide new information at an acceptable cost."
+        }
+      ],
+      "principle": "Acknowledge disappointment, then assess the next step. You can value what you learned while stopping a plan that no longer merits more effort.",
+      "action": "Write what new evidence another week could bring, how much more you will invest, and which result would make you stop or change direction.",
+      "review": "Did you respect the stopping rule? If you changed it, was that due to new information or greater difficulty admitting a loss?",
+      "template": "decision",
+      "chapter": "integration"
+    }
+  ],
+  "templates": [
+    {
+      "id": "decision",
+      "title": "Decision journal",
+      "description": "Record your reasoning before acting, then compare it with the result.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "The decision",
+          "hint": "State the specific question, deadline and confirmed facts."
+        },
+        {
+          "id": "options",
+          "label": "Available options",
+          "hint": "Write at least two options, including postponement if relevant, with benefits and costs."
+        },
+        {
+          "id": "assumptions",
+          "label": "Evidence and uncertainty",
+          "hint": "What am I relying on? What information is missing? What counterexample would change my mind?"
+        },
+        {
+          "id": "choice",
+          "label": "Choice and expectation",
+          "hint": "What do I choose, and why? What do I expect? If using a probability, specify the event it refers to."
+        },
+        {
+          "id": "boundary",
+          "label": "Action and stopping conditions",
+          "hint": "Who will do what, and when? What is the limit on effort? Which signal means pause or adjust?"
+        },
+        {
+          "id": "review",
+          "label": "Review date and outcome",
+          "hint": "Set a review date first. Later, record the outcome and distinguish the quality of your judgment from luck."
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "title": "Emotion journal",
+      "description": "Separate facts, interpretations and needs to find a response you can choose.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "What happened",
+          "hint": "Describe events as a camera would, without guessing motives yet."
+        },
+        {
+          "id": "signals",
+          "label": "Emotions and physical signals",
+          "hint": "Name the emotion as specifically as possible. You can also record intensity and physical sensations."
+        },
+        {
+          "id": "story",
+          "label": "My interpretation",
+          "hint": "What judgment came to mind? What other explanation is plausible?"
+        },
+        {
+          "id": "needs",
+          "label": "What matters and what I need",
+          "hint": "What am I trying to protect? Which needs can I meet myself, and which call for a request?"
+        },
+        {
+          "id": "response",
+          "label": "Possible responses",
+          "hint": "Pause, clarify, ask, decline or leave? Choose an action you can actually take."
+        },
+        {
+          "id": "review",
+          "label": "Review and adjustment",
+          "hint": "When will I review this? What happened after I acted? What would I keep or change next time?"
+        }
+      ]
+    },
+    {
+      "id": "conversation",
+      "title": "Difficult conversation planner",
+      "description": "Turn what you want to say into a specific, clear request someone can respond to.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Event and conversation goal",
+          "hint": "What happened specifically? What one issue should this conversation resolve?"
+        },
+        {
+          "id": "perspectives",
+          "label": "What each person may care about",
+          "hint": "Separate confirmed information from guesses. Prepare a question to check your understanding."
+        },
+        {
+          "id": "message",
+          "label": "My opening words",
+          "hint": "Describe behavior, impact and your needs. Avoid “you always” and labels about the person."
+        },
+        {
+          "id": "request",
+          "label": "Specific request and options",
+          "hint": "Who should do what, by when? If that is not possible, what alternatives exist?"
+        },
+        {
+          "id": "boundary",
+          "label": "Boundaries and exit plan",
+          "hint": "What language or requests are unacceptable? If they recur, will I pause or take another action?"
+        },
+        {
+          "id": "review",
+          "label": "Agreement and review",
+          "hint": "What did each person actually agree to? When will you check progress? What remains unresolved?"
+        }
+      ]
+    },
+    {
+      "id": "interests",
+      "title": "Interests and boundaries map",
+      "description": "Identify participants, incentives, costs and what you can decide.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Shared problem and goal",
+          "hint": "Are all parties addressing the same issue? What would resolution look like?"
+        },
+        {
+          "id": "people",
+          "label": "People and needs",
+          "hint": "Who requests, decides, acts and is affected? What does each person want to gain or avoid?"
+        },
+        {
+          "id": "incentives",
+          "label": "Rules and incentives",
+          "hint": "What behavior is rewarded or penalized? Who pays the costs and who benefits? What is still only a guess?"
+        },
+        {
+          "id": "power",
+          "label": "Resources, information and authority",
+          "hint": "Who holds key resources and information? What can I decide, and whose approval do I need?"
+        },
+        {
+          "id": "boundary",
+          "label": "Negotiable points and limits",
+          "hint": "What can be traded, and what needs a clear refusal? How will I act if a limit is crossed?"
+        },
+        {
+          "id": "proposal",
+          "label": "Proposal and validation",
+          "hint": "State a concrete proposal, owner and review date. What feedback would show that it works?"
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "positions-needs",
+      "title": "Needs behind positions",
+      "idea": "“It must be delivered today” is a position. Behind it may be a promise, an evaluation, a worry or a real use date. Treat these as hypotheses to check, not conclusions about motives.",
+      "questions": [
+        "What does the other person want to gain or avoid?",
+        "Which part of the request is least flexible?",
+        "Would they discuss another way to meet the need?"
+      ],
+      "example": "Someone needs a full report by Friday. On checking, the Friday meeting needs only three conclusions. You can offer a summary first and agree a separate date for the full report.",
+      "boundary": "People may be unable or unwilling to explain every need. Keep checking facts rather than telling them what they “really” want."
+    },
+    {
+      "id": "incentives",
+      "title": "Incentives behind behavior",
+      "idea": "Repeated behavior may relate to rewards, penalties and who bears costs. Appeals to attitude alone may not change an arrangement that makes the wrong behavior pay.",
+      "questions": [
+        "Which behavior gets recognized most easily now?",
+        "Who pays extra for doing the right thing?",
+        "How could responsibility, resources and evaluation align better?"
+      ],
+      "example": "A team is assessed only by task count, so complex work is avoided. Alongside encouraging responsibility, discuss difficulty, quality and collaborative contributions.",
+      "boundary": "Incentives are one possible explanation. Skills, information, resources or temporary pressures may produce the same behavior; compare the evidence."
+    },
+    {
+      "id": "decision-rights",
+      "title": "Participation, influence and decision authority",
+      "idea": "Advising, executing and approving changes are different roles. Giving responsibility without resources or authority can produce apparent agreement that cannot be delivered.",
+      "questions": [
+        "Who can approve changes to scope, dates or resources?",
+        "Who bears the consequences of the decision?",
+        "Does the person doing the work have the information and support they need?"
+      ],
+      "example": "A client contact requests extra work, but another owner must approve the budget. Have the right person confirm the trade-offs before making promises to the delivery team.",
+      "boundary": "Clear decision authority does not mean ignoring affected people. Even in urgent situations, record temporary decisions and obtain confirmation promptly."
+    },
+    {
+      "id": "negotiation",
+      "title": "Turn disputes into negotiable options",
+      "idea": "Break an all-or-nothing dispute into scope, timing, quality, resources and responsibility. Some constraints can be traded; others require acknowledging that you cannot have everything.",
+      "questions": [
+        "What matters most to each side?",
+        "What can I change, and who bears the cost?",
+        "What small, reversible step could test an option?"
+      ],
+      "example": "When asked to add features and deliver earlier, offer a smaller first release, confirmed additional resources or two deliveries. Make the costs of each choice visible.",
+      "boundary": "Not everything is a transaction. Do not obscure respect, safety or basic commitments with vague trades, or offer options you have no authority to deliver."
+    },
+    {
+      "id": "boundaries",
+      "title": "Boundaries are commitments about your own actions",
+      "idea": "A boundary states what you will do under particular conditions. It allows others their choices while clarifying what you will not take on indefinitely.",
+      "questions": [
+        "Which specific behaviors can I accept, and which can I not?",
+        "If this happens again, what action can I actually take?",
+        "Am I mixing requests, expectations and firm limits?"
+      ],
+      "example": "“Please do not message me late at night” is a request. “After 8 p.m., I will reply the next day; use the agreed channel for urgent matters” states your own action boundary.",
+      "boundary": "Boundaries should account for actual duties and commitments. In threatening or persistently harmful situations, prioritize getting to safety and seeking appropriate support; endurance is not the exercise."
+    },
+    {
+      "id": "escalation",
+      "title": "When to talk, escalate or leave",
+      "idea": "A misunderstanding may need clarification; repeated broken agreements may call for different cooperation rules. More explanation cannot always fix missing resources, authority or safety.",
+      "questions": [
+        "Does the same issue recur despite clear agreements?",
+        "Is the gap information, ability, resources or willingness to honor a commitment?",
+        "Who should intervene next, or under what conditions should cooperation stop?"
+      ],
+      "example": "Required materials remain missing after several agreements. Summarize requests, dates and impacts for the responsible person; if necessary, pause affected work under the agreed conditions.",
+      "boundary": "Escalate around facts, impacts and decisions needed, rather than punishment or winning. Explain exit conditions in advance where possible, and address actual safety risks promptly."
+    }
+  ]
+}

@@ -10,13 +10,14 @@ const LINKS = [
   { href: "/manual", label: "手册", match: (p: string) => p.startsWith("/manual") },
   { href: "/assessment", label: "自测", match: (p: string) => p.startsWith("/assessment") },
   { href: "/practice", label: "日课", match: (p: string) => p.startsWith("/practice") },
+  { href: "/workshop", label: "实践工坊", match: (p: string) => p.startsWith("/workshop") },
 ] as const;
 
 export function NavLinks() {
   const { t, tx } = useI18n();
   const pathname = stripLocale(usePathname());
   return (
-    <nav aria-label={t("主导航")} className="flex items-center gap-1 sm:gap-2">
+    <nav aria-label={t("主导航")} className="flex flex-wrap items-center gap-1 sm:gap-2">
       {LINKS.map((link) => {
         const active = link.match(pathname);
         return (
