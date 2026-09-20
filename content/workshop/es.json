@@ -1,0 +1,494 @@
+{
+  "title": "Taller práctico",
+  "intro": "Aplica el manual a una situación concreta: comprende el contexto, elige una acción, deja constancia y revisa tu juicio con los resultados.",
+  "ui": {
+    "eyebrow": "Manual de doble cociente · Un espacio para ampliar",
+    "growing": "Empezamos con tres módulos y seguiremos añadiendo casos, herramientas y temas. Elige un solo problema que te concierna hoy.",
+    "sectionNav": "Módulos del taller",
+    "items": "elementos",
+    "casesTitle": "Casos de situaciones cotidianas",
+    "casesIntro": "Elige una respuesta y examina sus ventajas, costes y condiciones.",
+    "workbookTitle": "Cuaderno para completar",
+    "workbookIntro": "Anota decisiones, emociones, conversaciones y límites para revisarlos después.",
+    "topicsTitle": "Intereses, incentivos y límites",
+    "topicsIntro": "Considera las necesidades junto con los recursos, las reglas, la autoridad y los costes.",
+    "caseNote": "Estos casos ficticios se basan en situaciones habituales. Con información incompleta, varias respuestas pueden ser razonables. Explora las consecuencias de cada opción; no se puntúa tu personalidad.",
+    "filter": "Filtrar situaciones",
+    "allCases": "Todas las situaciones",
+    "tradeoff": "Ventajas y costes de esta opción",
+    "chooseFirst": "Elige una respuesta para ver qué podría resolver y qué podría quedar pendiente.",
+    "principle": "Comprender el problema",
+    "action": "Un paso que puedes probar",
+    "review": "Revisión posterior",
+    "openWorkbook": "Abrir la ficha correspondiente",
+    "relatedChapter": "Leer el capítulo relacionado",
+    "privacy": "Lo que escribes se guarda solo en este navegador y no se envía. Los idiomas comparten los registros y tu texto original no cambia. Exporta una copia antes de cambiar de dispositivo o borrar datos del navegador.",
+    "chooseTemplate": "Elegir una ficha",
+    "draftHelp": "Cada ficha tiene un borrador que se guarda automáticamente. Guarda un registro para conservar una instantánea; después puedes seguir editando el borrador.",
+    "loading": "Cargando registros locales…",
+    "draftSaved": "Los borradores se guardan automáticamente en este navegador.",
+    "invalidStorage": "No se pudieron leer los registros existentes. Para protegerlos, lo que escribas ahora no se guardará en el navegador. Exporta los datos originales y, por separado, tu contenido actual.",
+    "saveFailed": "No se puede guardar en el navegador. El contenido actual solo está en esta página. Exporta una copia antes de cerrarla para no perderlo.",
+    "exportOriginal": "Exportar datos originales",
+    "saveRecord": "Guardar como registro",
+    "savedRecord": "Registro guardado. Puedes seguir editando el borrador.",
+    "exportDraft": "Exportar este borrador",
+    "clearDraft": "Vaciar este borrador",
+    "confirmClear": "¿Vaciar el borrador de esta ficha? Los registros guardados permanecerán.",
+    "confirmDelete": "¿Eliminar este registro? Si quieres conservarlo, exporta primero una copia.",
+    "confirmLoad": "¿Cargar este registro como borrador? Sustituirá el borrador actual de la ficha correspondiente. El registro se conservará.",
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "myRecords": "Mis registros de práctica",
+    "exportBackup": "Exportar copia completa",
+    "importBackup": "Importar copia",
+    "backupHelp": "La copia incluye borradores y registros; guárdala de forma segura. La importación combina registros y conserva los borradores existentes. Los archivos inválidos o en conflicto no sustituirán tus datos.",
+    "imported": "Copia combinada. Se conservaron los borradores existentes.",
+    "importFailed": "No se pudo importar: formato o versión inválidos, registros en conflicto o archivo mayor de 10 MB. Los datos existentes no se sustituyeron.",
+    "emptyRecords": "Aún no hay registros. Completa una ficha y guarda una instantánea de tu reflexión.",
+    "record": "Registro de práctica",
+    "note": "Tus notas",
+    "loadDraft": "Cargar como borrador",
+    "deleteRecord": "Eliminar registro",
+    "ask": "Tres preguntas útiles",
+    "example": "Un ejemplo",
+    "limit": "Límites de aplicación",
+    "mapInterests": "Completar el mapa de intereses y límites",
+    "nextTitle": "Deja que los resultados orienten tus respuestas",
+    "nextBody": "Termina cada ejercicio con una acción observable y una fecha de revisión. Al volver, compara tu juicio inicial con lo que ocurrió. Aquí seguiremos incorporando casos y temas."
+  },
+  "cases": [
+    {
+      "id": "scope-change",
+      "category": "Trabajo y colaboración",
+      "title": "El cliente añade una petición de última hora",
+      "situation": "Dos días antes de la entrega, el cliente pide una función extra que considera sencilla, sin cambiar la fecha. Todavía no has estimado el esfuerzo y el equipo tiene la agenda llena.",
+      "question": "¿Cómo responderías?",
+      "options": [
+        {
+          "text": "Aceptar primero y pedir después horas extra al equipo.",
+          "feedback": "Alivia la presión inmediata, pero convierte esfuerzo desconocido en una promesa a cargo del equipo. El compromiso necesita una estimación, recursos y autorización confirmados."
+        },
+        {
+          "text": "Rechazar cualquier cambio porque queda fuera del alcance.",
+          "feedback": "Protege el alcance, pero puede ignorar una necesidad urgente real. Explica las restricciones firmes; en otros casos, plantea sustituir alcance o ajustar la fecha."
+        },
+        {
+          "text": "Aclarar la necesidad y ofrecer opciones de alcance, fecha y recursos.",
+          "feedback": "Permite decidir entre alternativas concretas. Fija un plazo para evaluar, evitando posponer indefinidamente, y pide confirmación a quien tenga autoridad."
+        }
+      ],
+      "principle": "Entender la urgencia del cliente no exige asumir compromisos sin verificar. Quien pide, quien aprueba y quien paga el coste pueden ser personas distintas.",
+      "action": "Prueba: Revisaré el impacto y esta tarde presentaré dos opciones: mantener la fecha ajustando el alcance, o mantener el alcance ajustando la fecha. Después confirmamos la prioridad.",
+      "review": "¿Quedó claro el alcance adicional? ¿Quién aprobó? ¿Se hicieron visibles los costes de retraso, calidad y horas extra?",
+      "template": "interests",
+      "chapter": "iq-fa"
+    },
+    {
+      "id": "public-criticism",
+      "category": "Trabajo y colaboración",
+      "title": "Te critican delante de todos",
+      "situation": "En una reunión, un colega dice: «Nunca piensas las cosas bien». Sientes vergüenza y no sabes a qué riesgo concreto se refiere.",
+      "question": "¿Qué dirías a continuación?",
+      "options": [
+        {
+          "text": "Recordarle públicamente sus errores pasados.",
+          "feedback": "Puede proteger tu orgullo un momento, pero transforma el debate sobre el plan en conflicto personal. El problema factual sigue sin resolverse y los demás aportan con más dificultad."
+        },
+        {
+          "text": "Aceptar todo para terminar cuanto antes.",
+          "feedback": "Reduce la tensión, pero puedes aceptar una generalización incorrecta sin descubrir qué corregir. Revisa los hechos cuando se calme la conversación."
+        },
+        {
+          "text": "Pedir la omisión concreta y separar a la persona del plan.",
+          "feedback": "Ayuda a volver a los hechos: «¿A qué supuesto te refieres?». Si se repite el menosprecio, hará falta hablar también de límites."
+        }
+      ],
+      "principle": "Separa comportamientos y riesgos concretos de juicios globales sobre la persona. Aceptar información útil no implica aceptar humillaciones.",
+      "action": "Pregunta: Señala la omisión y la revisamos. Después, en privado: Agradezco comentarios sobre el plan, pero prefiero evitar generalizaciones como «tú siempre».",
+      "review": "¿Se identificó una omisión verificable? ¿Expresaste un límite? ¿Cambió la siguiente interacción?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "missed-deadline",
+      "category": "Trabajo y colaboración",
+      "title": "Ya sabes que no llegarás al plazo",
+      "situation": "Tu tarea está bloqueada y prevés tres días de retraso. Temes parecer incapaz y quieres encontrar una solución antes de informar.",
+      "question": "¿Cómo gestionarás esta mala noticia?",
+      "options": [
+        {
+          "text": "Callar e intentar recuperar el tiempo al final.",
+          "feedback": "Protege temporalmente las apariencias, pero reduce el margen de los demás para ajustar sus planes. Si hay retraso, también estará en juego la confianza."
+        },
+        {
+          "text": "Prometer una nueva fecha aún más ajustada para tranquilizar.",
+          "feedback": "Puede calmar momentáneamente, pero sin pruebas de resolver el bloqueo solo aplaza la incertidumbre. Toda nueva promesa necesita respaldo en recursos y alcance."
+        },
+        {
+          "text": "Informar pronto de hechos, incógnitas y medidas posibles.",
+          "feedback": "Expone la dificultad, pero deja margen al equipo. Distingue efectos confirmados de estimaciones y acuerda cuándo actualizarás la información."
+        }
+      ],
+      "principle": "Asumir responsabilidad incluye informar a tiempo para que otros puedan actuar. Comunicar un riesgo no es eludir responsabilidades.",
+      "action": "Resume lo completado, el bloqueo, el impacto estimado, quién debe hacer qué y la próxima revisión.",
+      "review": "¿Avisaste con suficiente antelación? ¿Qué supuestos fallaron? ¿Qué señal podrías detectar antes la próxima vez?",
+      "template": "decision",
+      "chapter": "iq-qi"
+    },
+    {
+      "id": "credit-dispute",
+      "category": "Trabajo y colaboración",
+      "title": "No mencionaron tu contribución",
+      "situation": "Un colega presenta un logro compartido sin citar tu parte esencial. Sientes que se atribuye tu mérito, pero no sabes si fue intencional.",
+      "question": "¿Qué harías primero?",
+      "options": [
+        {
+          "text": "Acusarlo en el grupo de apropiarse de tu mérito.",
+          "feedback": "Hace visible el malestar, pero puede agravar el conflicto sin pruebas suficientes. Separa la omisión verificable de las suposiciones sobre motivos."
+        },
+        {
+          "text": "No decir nada y esperar que lo haga mejor la próxima vez.",
+          "feedback": "Evita fricción inmediata, pero quizá no entienda el problema. Si el reconocimiento influye en la evaluación, callar mantiene las mismas reglas."
+        },
+        {
+          "text": "Comprobarlo en privado y pedir una corrección concreta.",
+          "feedback": "Deja espacio para un descuido y pide un cambio observable. Si hablar repetidamente no funciona, presenta los hechos a quien pueda aclarar las reglas de reconocimiento."
+        }
+      ],
+      "principle": "Confirma los hechos antes de interpretar motivos e incentivos. Atiende tanto la omisión como la forma de registrar y reconocer contribuciones.",
+      "action": "Enumera el resultado compartido, el trabajo de cada persona y las pruebas disponibles. Pide que se añada una mención concreta en la próxima actualización.",
+      "review": "¿Se corrigió la atribución? ¿Está claro cómo registrarla en adelante? ¿Hay más pruebas sobre la intención?",
+      "template": "interests",
+      "chapter": "eq-fa"
+    },
+    {
+      "id": "family-advice",
+      "category": "Vida y relaciones",
+      "title": "Quiere ser escuchado y tú das consejos",
+      "situation": "Un familiar cuenta que ha tenido un día agotador. Propones soluciones enseguida y responde: «No me estás escuchando». Sientes que no entiende tu buena intención.",
+      "question": "¿Cómo puedes continuar?",
+      "options": [
+        {
+          "text": "Explicar por qué tus consejos son correctos.",
+          "feedback": "Aporta razones, pero puede volver a ignorar su necesidad actual. Que un consejo sea útil y que la persona esté lista para recibirlo son asuntos distintos."
+        },
+        {
+          "text": "Decidir no volver a opinar.",
+          "feedback": "Evita otro disgusto de momento, pero convierte un desajuste puntual en distanciamiento. Pregunta qué tipo de apoyo necesita."
+        },
+        {
+          "text": "Reflejar lo que has escuchado y preguntar si quiere escucha o ideas.",
+          "feedback": "Permite elegir el apoyo. Si tampoco tienes energía, puedes acordar con sinceridad un momento en que puedas escuchar bien."
+        }
+      ],
+      "principle": "Comprueba qué ayuda quiere la otra persona. Tu deseo de resolver no significa que quiera un plan.",
+      "action": "Prueba: Parece que hoy has sostenido muchas cosas. ¿Quieres que primero te escuche o que pensemos juntos en el siguiente paso?",
+      "review": "¿Cómo describió su necesidad? ¿La reflejaste con precisión? ¿Ofreciste consejos después de que los pidiera?",
+      "template": "emotion",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "help-overload",
+      "category": "Vida y relaciones",
+      "title": "Ayudar está consumiendo todo tu tiempo",
+      "situation": "Un amigo pide ayuda a última hora con frecuencia. Te cuesta negarte, pero está afectando al sueño y a tus planes. Aceptas mientras acumulas enfado.",
+      "question": "¿Cómo contestarás esta vez?",
+      "options": [
+        {
+          "text": "Seguir aceptando y esperar que note tu cansancio.",
+          "feedback": "Mantiene la armonía aparente, pero no comunica límites reales. Puede interpretar tu aceptación continua como disponibilidad."
+        },
+        {
+          "text": "Enumerar todas las quejas y decir que nunca ayudarás más.",
+          "feedback": "Detiene la carga rápidamente, pero el resentimiento puede convertirse en acusación global. Si no hay un riesgo de seguridad, empieza por límites claros para ahora y el futuro."
+        },
+        {
+          "text": "Explicar lo que no puedes hacer y ofrecer solo ayuda sostenible.",
+          "feedback": "Puede decepcionar, pero basa la relación en tu capacidad real. Las alternativas son opcionales: no necesitas asumir la misma carga para demostrar buena voluntad."
+        }
+      ],
+      "principle": "Entender la dificultad ajena no te hace responsable de resolverla. El límite describe lo que harás, no lo que el otro debe pensar.",
+      "action": "Prueba: Esta semana no puedo encargarme. El sábado puedo dedicar quince minutos. Si no basta, tendrás que buscar otra opción.",
+      "review": "¿Respetaste tu límite? ¿Añadiste tareas por culpa? ¿La otra persona respeta una negativa clara?",
+      "template": "conversation",
+      "chapter": "eq-shu"
+    },
+    {
+      "id": "team-disagreement",
+      "category": "Juicio y elecciones",
+      "title": "El equipo no logra elegir entre dos planes",
+      "situation": "Ambos planes tienen partidarios. Se repiten ventajas, las estimaciones del riesgo difieren y nadie ha acordado quién decide al final.",
+      "question": "¿Cómo harías avanzar el debate?",
+      "options": [
+        {
+          "text": "Buscar más razones para demostrar que tu grupo tiene razón.",
+          "feedback": "Puede aportar pruebas o limitarse a repetir posturas. Comprueba primero si comparten el objetivo y los criterios de decisión."
+        },
+        {
+          "text": "Votar inmediatamente y dejar decidir a la mayoría.",
+          "feedback": "Sirve si la votación está acordada y es adecuada para sus consecuencias. Si una minoría asume el riesgo o la responsabilidad no está clara, los votos no sustituyen autoridad ni pruebas."
+        },
+        {
+          "text": "Acordar criterios y autoridad, y diseñar una prueba pequeña y reversible.",
+          "feedback": "Convierte el debate en comparación observable. Define duración, coste máximo y resultados que cambiarían la elección para evitar una prueba interminable."
+        }
+      ],
+      "principle": "Separa diferencias de valores y de hechos. Las primeras requieren una decisión responsable; la información o las pruebas pequeñas pueden reducir las segundas.",
+      "action": "Cada persona escribe el objetivo, el fracaso que más teme y las pruebas que la harían cambiar de opinión. Acordad una verificación con plazo.",
+      "review": "¿Qué prueba cambió la elección? ¿Quién decidió? ¿La prueba terminó o se amplió según lo acordado?",
+      "template": "decision",
+      "chapter": "iq-shu"
+    },
+    {
+      "id": "sunk-cost",
+      "category": "Juicio y elecciones",
+      "title": "¿Seguir después de invertir tanto?",
+      "situation": "Llevas dos meses con un plan cuya hipótesis principal sigue sin probarse. Continuar parece ofrecer esperanza, pero parar se siente como desperdiciar el esfuerzo.",
+      "question": "¿Cómo decidirás el siguiente paso?",
+      "options": [
+        {
+          "text": "Terminar a toda costa porque ya has invertido mucho.",
+          "feedback": "Es comprensible valorar el esfuerzo, pero el tiempo gastado no demuestra el valor del siguiente paso. Compara beneficios futuros, costes y alternativas."
+        },
+        {
+          "text": "Abandonar en cuanto aparece una dificultad.",
+          "feedback": "Evita más gasto, pero puedes retirarte demasiado pronto ante un obstáculo resoluble. Distingue una dificultad temporal de una hipótesis fundamental refutada."
+        },
+        {
+          "text": "Reevaluar el valor futuro y limitar una última prueba.",
+          "feedback": "Hace depender tanto seguir como parar de condiciones observables. La prueba solo vale si aporta información nueva a un coste asumible."
+        }
+      ],
+      "principle": "Reconoce la decepción y evalúa después. Puedes valorar lo aprendido y dejar un plan que ya no merece más esfuerzo.",
+      "action": "Escribe qué pruebas nuevas aportaría otra semana, cuánto más invertirás y qué resultado te haría parar o cambiar de dirección.",
+      "review": "¿Respetaste las condiciones de parada? Si las cambiaste, ¿fue por información nueva o por dificultad para admitir la pérdida?",
+      "template": "decision",
+      "chapter": "integration"
+    }
+  ],
+  "templates": [
+    {
+      "id": "decision",
+      "title": "Diario de decisiones",
+      "description": "Registra tus razones antes de actuar y contrástalas con el resultado.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Qué debo decidir",
+          "hint": "Define la pregunta, el plazo y los hechos confirmados."
+        },
+        {
+          "id": "options",
+          "label": "Opciones disponibles",
+          "hint": "Escribe al menos dos opciones, incluida la espera si procede, con beneficios y costes."
+        },
+        {
+          "id": "assumptions",
+          "label": "Pruebas e incertidumbre",
+          "hint": "¿En qué me apoyo? ¿Qué información falta? ¿Qué contraejemplo cambiaría mi opinión?"
+        },
+        {
+          "id": "choice",
+          "label": "Elección y expectativas",
+          "hint": "¿Qué elijo y por qué? ¿Qué espero que ocurra? Si indicas una probabilidad, concreta el suceso."
+        },
+        {
+          "id": "boundary",
+          "label": "Acción y condiciones de parada",
+          "hint": "¿Quién hará qué y cuándo? ¿Cuánto esfuerzo como máximo? ¿Qué señal exige parar o ajustar?"
+        },
+        {
+          "id": "review",
+          "label": "Fecha de revisión y resultado",
+          "hint": "Fija primero una fecha. Después registra el resultado y distingue la calidad del juicio de la suerte."
+        }
+      ]
+    },
+    {
+      "id": "emotion",
+      "title": "Diario de emociones",
+      "description": "Separa hechos, interpretaciones y necesidades para elegir una respuesta.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Qué ocurrió",
+          "hint": "Describe los hechos como una cámara, sin adivinar todavía los motivos."
+        },
+        {
+          "id": "signals",
+          "label": "Emociones y señales físicas",
+          "hint": "Nombra la emoción con precisión; puedes anotar intensidad y sensaciones corporales."
+        },
+        {
+          "id": "story",
+          "label": "Mi interpretación",
+          "hint": "¿Qué juicio apareció? ¿Qué otra explicación sería razonable?"
+        },
+        {
+          "id": "needs",
+          "label": "Lo que importa y lo que necesito",
+          "hint": "¿Qué intento proteger? ¿Qué necesidades puedo atender y cuáles requieren pedir ayuda?"
+        },
+        {
+          "id": "response",
+          "label": "Respuestas posibles",
+          "hint": "¿Pausar, aclarar, pedir, rechazar o salir? Elige una acción que puedas realizar."
+        },
+        {
+          "id": "review",
+          "label": "Revisión y ajuste",
+          "hint": "¿Cuándo revisaré? ¿Qué ocurrió al actuar? ¿Qué conservaría o cambiaría la próxima vez?"
+        }
+      ]
+    },
+    {
+      "id": "conversation",
+      "title": "Preparar una conversación difícil",
+      "description": "Convierte lo que quieres decir en una petición concreta, clara y respondible.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Hecho y objetivo de la conversación",
+          "hint": "¿Qué pasó exactamente? ¿Qué único problema quieres resolver en esta charla?"
+        },
+        {
+          "id": "perspectives",
+          "label": "Qué puede importar a cada parte",
+          "hint": "Separa lo confirmado de las conjeturas y prepara una pregunta para comprobarlo."
+        },
+        {
+          "id": "message",
+          "label": "Cómo empezaré",
+          "hint": "Describe conducta, impacto y necesidades. Evita «tú siempre» y etiquetas personales."
+        },
+        {
+          "id": "request",
+          "label": "Petición y opciones concretas",
+          "hint": "¿Quién debería hacer qué y para cuándo? Si no es posible, ¿qué alternativas hay?"
+        },
+        {
+          "id": "boundary",
+          "label": "Límites y forma de salir",
+          "hint": "¿Qué expresiones o peticiones no aceptas? Si se repiten, ¿cómo pausarás o actuarás?"
+        },
+        {
+          "id": "review",
+          "label": "Acuerdo y revisión",
+          "hint": "¿Qué aceptó realmente cada parte? ¿Cuándo comprobaréis el cumplimiento? ¿Qué desacuerdos quedan?"
+        }
+      ]
+    },
+    {
+      "id": "interests",
+      "title": "Mapa de intereses y límites",
+      "description": "Identifica participantes, incentivos, costes y lo que puedes decidir.",
+      "fields": [
+        {
+          "id": "situation",
+          "label": "Problema y objetivo compartidos",
+          "hint": "¿Todas las partes abordan el mismo problema? ¿Qué significaría resolverlo?"
+        },
+        {
+          "id": "people",
+          "label": "Personas y necesidades",
+          "hint": "¿Quién pide, decide, ejecuta y recibe el impacto? ¿Qué quiere ganar o evitar cada cual?"
+        },
+        {
+          "id": "incentives",
+          "label": "Reglas e incentivos",
+          "hint": "¿Qué conductas se premian o penalizan? ¿Quién paga y quién gana? ¿Qué son solo suposiciones?"
+        },
+        {
+          "id": "power",
+          "label": "Recursos, información y autoridad",
+          "hint": "¿Quién tiene los recursos y datos esenciales? ¿Qué puedo decidir y qué aprobación necesito?"
+        },
+        {
+          "id": "boundary",
+          "label": "Puntos negociables y límites firmes",
+          "hint": "¿Qué puede intercambiarse y qué exige una negativa? ¿Cómo actuaré si se cruza un límite?"
+        },
+        {
+          "id": "proposal",
+          "label": "Propuesta y verificación",
+          "hint": "Define propuesta, responsable y fecha de revisión. ¿Qué respuesta demostraría que funciona?"
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "positions-needs",
+      "title": "Necesidades detrás de las posturas",
+      "idea": "«Debe entregarse hoy» es una postura. Detrás puede haber compromisos, evaluaciones, temor o una necesidad real de uso. Trátalos como hipótesis a verificar, no como certezas sobre motivos.",
+      "questions": [
+        "¿Qué quiere obtener o evitar la otra persona?",
+        "¿Qué parte de la petición es menos flexible?",
+        "¿Aceptaría discutir otra manera de satisfacer la necesidad?"
+      ],
+      "example": "Se exige un informe completo para el viernes. Al comprobarlo, la reunión solo necesita tres conclusiones: se puede entregar un resumen y acordar otra fecha para el informe completo.",
+      "boundary": "Puede que la otra persona no pueda o no quiera explicar todas sus necesidades. Comprueba hechos sin decidir por ella lo que «realmente» desea."
+    },
+    {
+      "id": "incentives",
+      "title": "Incentivos detrás de la conducta",
+      "idea": "Las conductas repetidas pueden depender de premios, sanciones y reparto de costes. Pedir mejor actitud quizá no cambie un sistema que recompensa actuar mal.",
+      "questions": [
+        "¿Qué conducta recibe reconocimiento más fácilmente?",
+        "¿Quién paga más por hacer lo correcto?",
+        "¿Cómo alinear mejor responsabilidad, recursos y evaluación?"
+      ],
+      "example": "Si solo se evalúa el número de tareas, nadie quiere las complejas. Además de pedir responsabilidad, puede discutirse cómo considerar dificultad, calidad y colaboración.",
+      "boundary": "Los incentivos son una explicación posible. Capacidad, información, recursos o presión temporal pueden producir lo mismo; compara las pruebas."
+    },
+    {
+      "id": "decision-rights",
+      "title": "Participación, influencia y autoridad para decidir",
+      "idea": "Asesorar, ejecutar y aprobar cambios son funciones distintas. Asignar responsabilidad sin recursos ni autoridad puede producir acuerdos aparentes imposibles de cumplir.",
+      "questions": [
+        "¿Quién aprueba cambios de alcance, fechas o recursos?",
+        "¿Quién asume las consecuencias de la decisión?",
+        "¿La persona que ejecuta dispone de información y apoyo?"
+      ],
+      "example": "El contacto del cliente pide más trabajo, pero otro responsable debe aprobar el presupuesto. Confirma las alternativas con la persona adecuada antes de comprometer al equipo.",
+      "boundary": "Aclarar la autoridad no significa ignorar a los afectados. Incluso ante una urgencia, registra decisiones provisionales y confirma cuanto antes."
+    },
+    {
+      "id": "negotiation",
+      "title": "Transformar disputas en opciones negociables",
+      "idea": "Descompón un «sí o no» en alcance, tiempo, calidad, recursos y responsabilidad. Algunas restricciones se intercambian; otras exigen aceptar que no todo puede lograrse a la vez.",
+      "questions": [
+        "¿Qué es lo más importante para cada parte?",
+        "¿Qué puedo ajustar y quién asume el coste?",
+        "¿Qué prueba pequeña y reversible permitiría avanzar?"
+      ],
+      "example": "Si piden más funciones y una entrega adelantada, ofrece reducir el primer alcance, sumar recursos confirmados o entregar en dos fases, mostrando el coste de cada opción.",
+      "boundary": "No todo es una transacción. No ocultes respeto, seguridad o compromisos básicos tras intercambios vagos, ni ofrezcas opciones que no puedes autorizar."
+    },
+    {
+      "id": "boundaries",
+      "title": "Un límite compromete tus propias acciones",
+      "idea": "Un límite dice qué harás en determinadas condiciones. Reconoce la libertad ajena y aclara lo que no asumirás indefinidamente.",
+      "questions": [
+        "¿Qué conductas concretas acepto y cuáles no?",
+        "Si ocurre otra vez, ¿qué acción puedo realizar de verdad?",
+        "¿Estoy mezclando peticiones, expectativas y límites firmes?"
+      ],
+      "example": "«No me escribas tarde» es una petición. «Después de las ocho responderé al día siguiente; para urgencias usa el canal acordado» define tu actuación.",
+      "boundary": "Los límites deben considerar responsabilidades y compromisos reales. Ante amenazas o daños persistentes, prioriza salir del peligro y buscar apoyo; aguantar no es el ejercicio."
+    },
+    {
+      "id": "escalation",
+      "title": "Cuándo hablar, escalar o retirarse",
+      "idea": "Un malentendido puede aclararse; los incumplimientos repetidos pueden exigir nuevas reglas. Más explicaciones no siempre resuelven la falta de recursos, autoridad o seguridad.",
+      "questions": [
+        "¿El problema se repite pese a acuerdos claros?",
+        "¿Faltan información, capacidad, recursos o voluntad de cumplir?",
+        "¿Quién debe intervenir o bajo qué condiciones debe terminar la cooperación?"
+      ],
+      "example": "Tras varios acuerdos siguen faltando documentos imprescindibles. Resume peticiones, fechas e impactos y pide coordinación al responsable; si procede, pausa el trabajo según las condiciones acordadas.",
+      "boundary": "Escala sobre hechos, impactos y decisiones necesarias, no para castigar o ganar. Explica las condiciones de salida de antemano cuando sea posible y atiende los riesgos reales de seguridad sin demora."
+    }
+  ]
+}
