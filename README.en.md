@@ -10,7 +10,7 @@ An interactive handbook connecting clear thinking, emotional awareness and relat
 
 > **Read and use it directly in your browser:** [Open the English web app](https://xialuyu5-oss.github.io/dual-quotient-manual/en/). No download, installation, account or API key required.
 
-[Read the preface](content/en/00-preface.md) · [One-page overview](content/en/17-one-page.md) · [Windows download](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0)
+[Read the preface](content/en/00-preface.md) · [One-page overview](content/en/17-one-page.md) · [Windows download](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.4.0)
 
 ## Nine complete app languages
 
@@ -30,9 +30,19 @@ The interface, all chapters, questions, result explanations and practice instruc
 
 Existing Chinese URLs remain available. Repository introductions are provided in Simplified Chinese, Traditional Chinese, English and Japanese. Concrete translation corrections are welcome.
 
+## Practice workshop: a separate space to grow
+
+**[Open the practice workshop](https://xialuyu5-oss.github.io/dual-quotient-manual/en/workshop/)** or use the top navigation. Existing handbook pages retain their content; new material grows in this separate page, available in all nine languages.
+
+- **8 fictional everyday cases**: late scope changes, public criticism, delay warnings, credit, listening, helping too much, team disagreement and sunk costs. Choose a response, examine trade-offs and open its matching worksheet.
+- **4 fillable worksheets**: decision journal, emotion journal, difficult conversation planner, and interests and boundaries map. Each has an automatic draft, saved snapshots, history review and loading, Markdown export, and JSON backup import/export.
+- **6 topics**: needs behind positions, incentives, decision authority, negotiation, action boundaries, and escalation or exit. Each includes an explanation, three questions, an example and limits of application.
+
+Your writing stays in this browser and is not uploaded. Languages share records without translating your text. See the [content extension guide](docs/workshop-content.md) for maintenance details.
+
 ## Windows portable edition
 
-[Download v0.3.0 for Windows x64](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.3.0), fully extract `windows-x64.zip`, then double-click **双商训练手册.exe**. The handbook opens in your browser. Keep the launcher window open while using it; closing it stops the local service.
+[Download v0.4.0 for Windows x64](https://github.com/xialuyu5-oss/dual-quotient-manual/releases/tag/v0.4.0), fully extract `windows-x64.zip`, then double-click **双商训练手册.exe**. The handbook opens in your browser. Keep the launcher window open while using it; closing it stops the local service.
 
 - No separate Node.js installation or commands. Reading, assessment and practice work offline with system fonts.
 - Windows 10/11 x64 with the system .NET Framework 4.x. Keep the bundled `app` and `runtime` folders alongside the launcher.
@@ -124,7 +134,7 @@ The [Pages workflow](.github/workflows/deploy-pages.yml) checks and publishes th
 ## Data and network behavior
 
 - Assessment history and practice records use this browser's site-specific `localStorage`. There is no account, database, result-upload endpoint or application analytics.
-- Unsubmitted answers are not persistently saved. Different browsers, devices and site addresses do not synchronize. Clearing site data removes records; no export/backup feature is currently provided.
+- Unsubmitted assessment answers are not persistently saved. Browsers, devices and site addresses do not automatically synchronize; clearing site data removes records. Workshop drafts and records support backup import/export. Assessment and daily-practice history do not yet support backups.
 - The web version requests Noto fonts from Google Fonts and falls back to system fonts. The portable version uses system fonts without that request.
 - Cursor and Fable5.1 describe how the project was created. Scoring and recommendations use local rules; the running app does not call an AI model.
 
